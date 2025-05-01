@@ -1,0 +1,26 @@
+.welcome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.welcome span{
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--buttons);
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.news h2{
+    margin: 2vh 0;
+}

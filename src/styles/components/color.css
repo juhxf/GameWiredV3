@@ -1,0 +1,13 @@
+:root{
+    --fundo: rgba(0, 0, 0);
+    --eclipse: rgba(40, 35, 72);
+    --buttons: rgba(133, 117, 241);
+    --fontes: rgba(255, 255, 255);
+    --cards: rgb(25, 25, 25);
+
+    --fundoLight: rgb(255, 255, 255);
+    --eclipseLight: rgba(40, 35, 72);
+    --buttonsLight: rgba(133, 117, 241);
+    --fontesLight: rgb(0, 0, 0);
+    --cardsLight: rgb(211, 211, 211);
+}
