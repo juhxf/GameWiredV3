@@ -24,3 +24,27 @@
 .news h2{
     margin: 2vh 0;
 }
+
+.games{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+
+.games h2{
+    margin: 2vh 0;
+}
+
+.comunidade{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+
+.comunidade h2{
+    margin: 2vh 0;
+}

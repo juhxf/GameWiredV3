@@ -63,3 +63,72 @@
     padding: 10px;
     border-radius: 12px;
 }
+
+.gamesCard{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    width: 75%;
+}
+
+.gamesCard .cardGame{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 238px;
+    height: 310px;
+    border-radius: 20px;
+}
+
+.cardGame img{
+    width: 238px;
+    height: 310px;
+    background: var(--buttons);
+    border-radius: 20px;
+}
+
+.newsCard .cardComunity{
+    width: 320px;
+    height: 347px;
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.cardComunity .img{
+    display: flex;
+    align-items: center;
+}
+
+.cardComunity .img img{
+    width: 72px;
+    height: 72px;
+    background: #9E9E9E;
+    border-radius: 100%;
+}
+
+.cardComunity .img h3{
+    margin-left: 1vw;
+}
+
+.cardComunity .textArea{
+    height: 220px;
+    position: relative;
+    text-align: justify;
+}
+
+.cardComunity .textArea p{
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardComunity .textArea p::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent, #191919);
+}

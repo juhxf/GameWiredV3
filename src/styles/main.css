@@ -1,11 +1,12 @@
+
 /*Componentes*/
-@import url('/GameWiredV3/src/styles/components/color.css');
-@import url('/GameWiredV3/src/styles/components/cards.css');
+@import url('/src/styles/components/color.css');
+@import url('/src/styles/components/cards.css');
 
 /*Base*/
-@import url('/GameWiredV3/src/styles/base/_reset.css');
-@import url('/GameWiredV3/src/styles/base/_global.css');
+@import url('/src/styles/base/_reset.css');
+@import url('/src/styles/base/_global.css');
 
 
 /*Layout*/
-@import url('/GameWiredV3/src/styles/layout/navBar.css');
+@import url('/src/styles/layout/navBar.css');
