@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Outfit', 'Montserrat', 'Nunito', sans-serif;
+    background: var(--fundo);
+    color: var(--fontes);
+}
+
 .eclipse::before{
     content: "";
     position: fixed;
@@ -11,12 +21,6 @@
     top: -30%;
     right: -10%;
     z-index: -1;
-}
-
-body{
-    font-family: 'Outfit', 'Montserrat', 'Nunito', sans-serif;
-    background: var(--fundo);
-    color: var(--fontes);
 }
 
 h1{
@@ -54,8 +58,12 @@ h4{
         background: var(--cardsLight);
     }
 
+    .card a{
+        color: var(--fontes);
+    }
+
     .card .textArea p::before{
-        background: linear-gradient(transparent, #f5f6fa);
+        background: linear-gradient(transparent, #dedede);
     }
 
     .newsCard .cardComunity{
@@ -63,9 +71,24 @@ h4{
     }
 
     .cardComunity .textArea p::before{
-        background: linear-gradient(transparent, #f5f6fa);
+        background: linear-gradient(transparent, #dedede);
     }
 
+    .devCard{
+        background: var(--cardsLight);
+    }
+
+    .devCard a{
+        color: var(--fontes);
+    }
+
+    footer{
+        background: var(--cardsLight);
+    }
+
+    footer p{
+        color: var(--fontesLight);
+    }
 }
 
 @media screen and (max-width: 768px){

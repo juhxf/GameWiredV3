@@ -1,8 +1,19 @@
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    height: 280vh;
+
+}
+
+
 .newsCard{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     width: 80%;
+    gap: 5%;
 }
 
 .newsCard .card{

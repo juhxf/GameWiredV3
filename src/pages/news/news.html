@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -12,7 +12,7 @@
     />
 
     <link rel="stylesheet" href="/src/styles/main.css" />
-    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/pages/news/news.css" />
 
     <link
       rel="stylesheet"
@@ -28,7 +28,7 @@
       href="/GameWiredV3/src/assets/images/Logo.svg"
     />
 
-    <title>GameWired</title>
+    <title>GameWired | Notícias</title>
   </head>
   <body>
     <div class="eclipse"></div>
@@ -36,7 +36,9 @@
     <header>
       <nav>
         <div class="navLogo">
-          <img src="/src/assets/images/Logo.svg" alt="Logo-GameWired" />
+          <a href="/index.html">
+            <img src="/src/assets/images/Logo.svg" alt="Logo-GameWired" />
+          </a>
         </div>
 
         <div class="navCenter">
@@ -77,19 +79,18 @@
       </div>
     </header>
 
-    <main id="home">
-      <section>
-        <div class="welcome">
-          <h1>Bem-Vindo ao</h1>
-
-          <span> GameWired </span>
-
-          <p>Seu blog principal de notícias!</p>
-        </div>
-      </section>
-
+    <main id="notice">
       <section class="news">
-        <h2>Fique por dentro das notícias</h2>
+        <div class="noticias">
+          <h1>Notícias</h1>
+
+          <form action="">
+            <input type="search" placeholder="O que procura?" class="barra" />
+            <button>
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
 
         <article class="newsCard">
           <div class="card">
@@ -158,51 +159,42 @@
               <a href=""> Leia mais </a>
             </div>
           </div>
-        </article>
-      </section>
 
-      <section class="games">
-        <h2>Mais Jogados</h2>
-
-        <article class="gamesCard">
-          <div class="cardGame">
-            <img src="" alt="" />
-            <div class="textGame"></div>
-          </div>
-
-          <div class="cardGame">
-            <img src="" alt="" />
-            <div class="textGame"></div>
-          </div>
-
-          <div class="cardGame">
-            <img src="" alt="" />
-            <div class="textGame"></div>
-          </div>
-
-          <div class="cardGame">
-            <img src="" alt="" />
-            <div class="textGame"></div>
-          </div>
-
-          <div class="cardGame">
-            <img src="" alt="" />
-            <div class="textGame"></div>
-          </div>
-        </article>
-      </section>
-
-      <section class="comunidade">
-        <h2>Participe da comunidade</h2>
-
-        <article class="newsCard">
-          <div class="cardComunity">
+          <div class="card">
             <div class="img">
               <img src="" alt="" />
-              <h3>User</h3>
             </div>
 
             <div class="textArea">
+              <span> 00/00/00 </span>
+
+              <h3>Título</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
+                beatae saepe! Libero iste cum atque esse dolor, nihil voluptates
+                commodi fugiat eos perspiciatis! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Odio laborum quia nulla aperiam
+                fugiat voluptatibus dolores amet, reprehenderit qui quae culpa,
+                aspernatur dolor suscipit omnis quam! Nesciunt accusamus fugiat
+                sequi!
+              </p>
+
+              <a href=""> Leia mais </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+
+            <div class="textArea">
+              <span> 00/00/00 </span>
+
+              <h3>Título</h3>
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
@@ -214,13 +206,16 @@
             </div>
           </div>
 
-          <div class="cardComunity">
+          <div class="card">
             <div class="img">
               <img src="" alt="" />
-              <h3>User</h3>
             </div>
 
             <div class="textArea">
+              <span> 00/00/00 </span>
+
+              <h3>Título</h3>
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
@@ -232,46 +227,71 @@
             </div>
           </div>
 
-          <div class="cardComunity">
+          <div class="card">
             <div class="img">
               <img src="" alt="" />
-              <h3>User</h3>
             </div>
 
             <div class="textArea">
+              <span> 00/00/00 </span>
+
+              <h3>Título</h3>
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
                 beatae saepe! Libero iste cum atque esse dolor, nihil voluptates
-                commodi fugiat eos perspiciatis! Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Ab ut architecto id quaerat
-                aperiam quisquam, aliquam labore modi? Corporis blanditiis
-                dicta, aperiam quidem sit saepe in alias facilis quasi
-                excepturi.
+                commodi fugiat eos perspiciatis! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Odio laborum quia nulla aperiam
+                fugiat voluptatibus dolores amet, reprehenderit qui quae culpa,
+                aspernatur dolor suscipit omnis quam! Nesciunt accusamus fugiat
+                sequi!
               </p>
 
               <a href=""> Leia mais </a>
             </div>
           </div>
-        </article>
-      </section>
 
-      <section class="devs">
-        <article class="devCard">
-          <div class="textDev">
-            <h2>Conheça os nossos</h2>
+          <div class="card">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
 
-            <span> Desenvolvedores </span>
+            <div class="textArea">
+              <span> 00/00/00 </span>
 
-            <p>Saiba quem participou da criação do GameWired</p>
+              <h3>Título</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
+                beatae saepe! Libero iste cum atque esse dolor, nihil voluptates
+                commodi fugiat eos perspiciatis!
+              </p>
+
+              <a href=""> Leia mais </a>
+            </div>
           </div>
 
-          <div class="developers">
-            <a href=""> Guilherme Bianchini </a>
-            <a href=""> Julia Oliveira </a>
-            <a href=""> Luiz Jeronimo </a>
-            <a href=""> Pedro Henrique </a>
-            <a href=""> Pedro Melquiades </a>
+          <div class="card">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+
+            <div class="textArea">
+              <span> 00/00/00 </span>
+
+              <h3>Título</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci, dolorum a. Enim dolor aliquid, voluptas dignissimos
+                beatae saepe! Libero iste cum atque esse dolor, nihil voluptates
+                commodi fugiat eos perspiciatis!
+              </p>
+
+              <a href=""> Leia mais </a>
+            </div>
           </div>
         </article>
       </section>
@@ -324,15 +344,13 @@
         <div class="navigation">
           <p>Navegação</p>
 
-          <a href="#home"> Home </a>
-          <a href="/src/pages/news/news.html"> Notícias </a>
+          <a href="/index.html"> Home </a>
+          <a href="#notice"> Notícias </a>
           <a href="/src/pages/plataforma/platafor.html"> Plataformas </a>
           <a href="/src/pages/comunidade/comuni.html"> Comunidade </a>
           <a href=""> Login </a>
         </div>
       </section>
     </footer>
-
-    <script src="/src/scripts/layout/navBar.js"></script>
   </body>
 </html>

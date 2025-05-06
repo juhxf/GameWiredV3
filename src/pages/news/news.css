@@ -1,0 +1,31 @@
+.noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.noticias .barra{
+    border-radius: 100px;
+    height: 4vh;
+    width: 15vw;
+
+}
+
+.noticias .barra::placeholder{
+    color: var(--fontesLight);
+    padding: 15px;
+}
+
+.noticias button{
+    border-radius: 100%;
+    width: 2vw;
+    height: 4vh;
+    background: var(--buttons);
+    text-align: center;
+}
+
+.noticias .bi-search{
+    color: var(--fontes);
+}

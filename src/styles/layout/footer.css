@@ -1,0 +1,70 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--cards);
+    position: relative;
+    bottom: 0;
+    height: 400px;
+}
+
+footer .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 43%;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    height: 70px;
+    width: 70px;
+}
+
+.header i{
+    font-size: 1.75em;
+    margin: 0 1vw;
+}
+
+footer spans{
+    margin: 1vh 7vw 0;
+}
+
+footer .info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 15%;
+}
+
+.info p{
+    margin: 2vh 0 1vh 0;
+    color: #ffffff73;
+
+}
+
+.info .dev{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info .about{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info .navigation{
+    display: flex;
+    flex-direction: column;
+
+}
+
+a:hover{
+    color: var(--buttons);
+    transition: 0.3s;
+}

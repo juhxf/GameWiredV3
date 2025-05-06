@@ -5,9 +5,9 @@
     --fontes: rgba(255, 255, 255);
     --cards: rgb(25, 25, 25);
 
-    --fundoLight: rgb(255, 255, 255);
+    --fundoLight: #efeced;
     --eclipseLight: #e4d9f7;
     --buttonsLight: rgba(133, 117, 241);
-    --fontesLight: rgb(0, 0, 0);
-    --cardsLight: #f5f6fa;
+    --fontesLight: #231E40;
+    --cardsLight: #dedede;
 }

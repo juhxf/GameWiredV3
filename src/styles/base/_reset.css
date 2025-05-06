@@ -42,10 +42,11 @@
   button{
     border: none;
   }
-  
+
   /* 7. Formulários e inputs */
   input, button, textarea, select {
     font: inherit;
+    border: none;
     margin: 0;
   }
 
