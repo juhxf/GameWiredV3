@@ -1,0 +1,61 @@
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.welcome span{
+    font-size: 4.5em;
+    font-weight: bolder;
+    color: var(--buttons);
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    height: 90vh;
+}
+
+.news h2{
+    margin: 3vh 0;
+}
+
+.games{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+}
+
+.games h2{
+    margin: 3vh 0;
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.community h2{
+    margin: 3vh 0;
+}
+
+.community .link{
+    margin: 3vh 0;
+    background: var(--fontesLight);
+    padding: 15px;
+    border-radius: 12px;
+    color: var(--fontes);
+
+    &:hover{
+        background: var(--buttons);
+        transition: 1s ease;
+    }
+}

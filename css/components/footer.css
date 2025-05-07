@@ -10,13 +10,17 @@ footer{
 footer .header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 43%;
+    justify-content: flex-start;
+}
+
+footer a{
+    color: var(--fontes);
 }
 
 .header .logo{
     display: flex;
     align-items: center;
+    margin: 0 7vw;
 }
 
 .header img{
@@ -46,7 +50,7 @@ footer .info{
 
 }
 
-.info .dev{
+.info .social{
     display: flex;
     flex-direction: column;
 

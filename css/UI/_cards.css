@@ -1,0 +1,120 @@
+/* Card Notícias */
+.newsCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    gap: 5%;
+}
+
+.card{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 360px;
+    height: auto;
+    background: var(--cards);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card img{
+    width: 350px;
+    height: 250px;
+    background: var(--fontes);
+    border-radius: 20px;
+}
+
+.card .textCard{
+    height: 340px;
+    position: relative;
+}
+
+.textCard p{
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+.textCard p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(transparent, #191919);
+}
+
+/*Card Games*/
+.gameCard{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    width: 80%;
+
+}
+
+.cardGame{
+    width: 238px;
+    height: 310px;
+    border-radius: 20px;
+    background: var(--buttons);
+}
+
+/* Card Comunidade*/
+.commCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 80%;
+    gap: 5%;
+}
+
+.profUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh 0;
+}
+
+.profUser img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 0 1vw;
+}
+
+.card .textComm{
+    height: 280px;
+    position: relative;
+}
+
+.textComm p{
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.textComm p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent, #191919);
+}
+
+.textComm a{
+    position: absolute;
+    bottom: 0;
+    text-decoration: underline;
+    color: #ffffff45;
+
+    &:hover{
+        color: var(--buttons);
+        transition: 0.5s ease;
+    }
+}
