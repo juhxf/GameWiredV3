@@ -25,12 +25,13 @@
       rel="icon"
       sizes="16x16 32x32 48x48"
       type="image/png"
-      href="/GameWiredV3/src/assets/images/Logo.svg"
+      href="/sources/assets/images/Logo.svg"
     />
 
     <title>GameWired | Notícias</title>
   </head>
   <body>
+    <div class="eclipse"></div>
     <header>
       <nav>
         <div class="navLogo">
@@ -46,8 +47,8 @@
         </div>
 
         <div class="navUser">
-          <button id="toggleTheme">
-            <i class="bi bi-moon"></i>
+          <button id="toggleTheme" onclick="toggle()">
+            <i id="dark" class="bi bi-moon"></i>
           </button>
 
           <button class="userProfile">
@@ -56,7 +57,9 @@
         </div>
 
         <div class="navMenu">
-          <i id="dark" class="bi bi-moon"></i>
+          <button onclick="toggle()">
+            <i class="bi bi-moon"></i>
+          </button>
 
           <button onclick="openMenu()">
             <span class="bar"></span>
@@ -66,7 +69,15 @@
         </div>
       </nav>
 
-      <div class="navMenu"></div>
+      <div class="navMobile">
+        <button class="userProfile">
+          <i class="bi bi-person-circle"></i>
+        </button>
+
+        <a href="/pages/notices/news.html"> Notícias </a>
+        <a href=""> Plataformas </a>
+        <a href=""> Comunidade </a>
+      </div>
     </header>
 
     <main id="notices">
@@ -325,5 +336,8 @@
         </div>
       </section>
     </footer>
+
+    <script src="/scripts/themas.js"></script>
+    <script src="/scripts/navBar.js"></script>
   </body>
 </html>

@@ -46,7 +46,7 @@ footer .info{
 
 .info p{
     margin: 2vh 0 1vh 0;
-    color: #ffffff73;
+    color: var(--fontes);
 
 }
 

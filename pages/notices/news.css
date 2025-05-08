@@ -10,6 +10,7 @@
     height: 5vh;
     width: 18vw;
     border-radius: 100px;
+    background: var(--fontes);
 
     &::placeholder{
         font-size: 1.25em;

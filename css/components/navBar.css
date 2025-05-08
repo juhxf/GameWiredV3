@@ -26,8 +26,8 @@ nav{
 }
 
 .navCenter a{
-    position: relative;
     color: var(--fontes);
+    position: relative;
     font-weight: 600;
 
     &:hover{
@@ -75,4 +75,81 @@ nav{
 
 .navMenu{
     display: none;
+}
+.navMenu button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+}
+
+.navMenu i{
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.navMenu .bar{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: var(--fontes);
+    border-radius: 100px;
+    margin: 5px 0;
+}
+
+.navMobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    nav{
+        gap: 60%;
+    }
+
+    .navCenter{
+        display: none;
+    }
+
+    .navUser{
+        display: none;
+    }
+
+    .navMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    }
+
+    .navMobile.active{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter: blur(80px);
+        position: fixed;
+        top: 7%;
+        right: 0;
+        height: 100%;
+        width: 40%;
+        z-index: 100;
+    }
+
+    .navMobile button{
+        margin: 8vh 0;
+        background: transparent;
+    }
+
+    .navMobile .bi-person-circle{
+        font-size: 5em;
+    }
+
+    .navMobile a{
+        color: var(--fontes);
+        padding: 25px;
+        font-size: 2em;
+    }
 }

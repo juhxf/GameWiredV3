@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    width: 80%;
+    width: 85%;
     height: auto;
     gap: 5%;
 }
@@ -48,12 +48,16 @@
     background: linear-gradient(transparent, #191919);
 }
 
+.textCard a{
+    color: var(--fontes2);
+}
+
 /*Card Games*/
 .gameCard{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    width: 80%;
+    width: 85%;
 
 }
 
@@ -69,7 +73,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    width: 80%;
+    width: 85%;
     gap: 5%;
 }
 
@@ -111,7 +115,7 @@
     position: absolute;
     bottom: 0;
     text-decoration: underline;
-    color: #ffffff45;
+    color: var(--fontes);
 
     &:hover{
         color: var(--buttons);

@@ -1,7 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+.lightTheme{
+    background: var(--fundoLight);
+    color: var(--fontesLight);
+
+    .eclipse::before{
+        background: var(--eclipseLight);
+    }
+    .navCenter a{
+        color: var(--fontesLight);
+
+    }
+
+    .navUser .bi-moon, .bi-person-circle, .bi-sun{
+        color: var(--fontesLight);
+    }
+
+    .card{
+        background: var(--cardsLight);
+    }
+
+    .btnLink{
+        color: var(--fontes);
+    }
+
+    .textCard p::before{
+
+        background: linear-gradient(transparent, rgb(222, 222, 222));
+    }
+
+    .textComm p::before{
+
+        background: linear-gradient(transparent, rgb(222, 222, 222));
+    }
+
+    .textComm a{
+        color: var(--fontesLight);
+    }
+
+    footer{
+        background: var(--cardsLight);
+    }
+
+    footer p, a{
+        color: var(--fontesLight);
+
+    }
+
+    .search input{
+        background:  var(--fontesLight);
+
+        &::placeholder{
+            color: var(--fontes);
+        }
+    }
+
+
+
+}
+
 html{
     scroll-behavior: smooth;
+    color-scheme: light dark;
 }
 
 body{

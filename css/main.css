@@ -1,8 +1,15 @@
-@import url('/css/base/_reset.css');
+/*Cores*/
 @import url('/css/UI/_color.css');
-@import url('/css/UI/_cards.css');
-@import url('/css/UI/buttons.css');
-@import url('/css/base/_light.css');
+
+/*Base*/
+@import url('/css/base/_reset.css');
 @import url('/css/base/_setup.css');
+@import url('/css/base/_light.css');
+
+/*Componentes/Layout*/
 @import url('/css/components/navBar.css');
 @import url('/css/components/footer.css');
+
+/*Reutilizáveis*/
+@import url('/css/UI/_cards.css');
+@import url('/css/UI/_buttons.css');
