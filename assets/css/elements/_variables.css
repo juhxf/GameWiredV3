@@ -1,0 +1,15 @@
+:root{
+   --fundo: rgba(0, 0, 0);
+    --fonts-footer: rgb(80, 79, 79);
+    --eclipse: rgba(40, 35, 72);
+    --buttons: rgba(133, 117, 241);
+    --fontes: rgba(255, 255, 255);
+    --cards: rgb(25, 25, 25);
+
+        --fundoLight: rgba(221, 226, 222, 0.9);
+        --fonts-footer: rgb(80, 79, 79);
+        --eclipseLight: rgb(209, 185, 250);
+        --buttonsLight: rgba(133, 117, 241);
+        --fontesLight: rgb(35, 30, 64);
+        --cardsLight: rgb(222, 222, 222);
+}

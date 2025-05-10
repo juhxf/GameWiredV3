@@ -2,17 +2,18 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="GameWired, o canal mais completo com notícias do mundo gamer!"
     />
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 48x48"
+      type="image/png"
+      href="/src/images/Logo.svg"
+    />
 
     <link
       rel="stylesheet"
@@ -21,12 +22,8 @@
       crossorigin="anonymous"
     />
 
-    <link
-      rel="icon"
-      sizes="16x16 32x32 48x48"
-      type="image/png"
-      href="/sources/assets/images/Logo.svg"
-    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/pages/index.css" />
 
     <title>GameWired</title>
   </head>
@@ -36,129 +33,104 @@
     <header>
       <nav>
         <div class="navLogo">
-          <img src="/sources/assets/images/Logo.svg" alt="Logo-GameWired" />
+          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
         </div>
 
         <div class="navCenter">
-          <a href="/pages/notices/news.html"> Notícias </a>
-          <a href=""> Plataformas </a>
-          <a href=""> Comunidade </a>
+          <a href="/assets/pages/news.html" class="abas"> Notícias </a>
+          <a href="" class="abas"> Plataformas </a>
+          <a href="" class="abas"> Comunidade </a>
         </div>
 
         <div class="navUser">
-          <button id="toggleTheme" onclick="toggle()">
-            <i class="bi bi-moon"></i>
+          <button onclick="toggle()" class="btnUser">
+            <i class="bi bi-moon-stars"></i>
           </button>
 
-          <button class="userProfile">
+          <button class="btnUser">
             <i class="bi bi-person-circle"></i>
           </button>
-        </div>
 
-        <div class="navMenu">
-          <button onclick="toggle()">
-            <i class="bi bi-moon"></i>
-          </button>
-
-          <button onclick="openMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
+          <button></button>
         </div>
       </nav>
-
-      <div class="navMobile">
-        <button class="userProfile">
-          <i class="bi bi-person-circle"></i>
-        </button>
-
-        <a href="/pages/notices/news.html"> Notícias </a>
-        <a href=""> Plataformas </a>
-        <a href=""> Comunidade </a>
-      </div>
     </header>
 
     <main id="home">
       <section class="welcome">
-        <div class="textWelcome">
+        <div>
           <h1>Bem-vindo ao</h1>
 
           <span> GameWired </span>
 
-          <p>Seu blog principal de notícias</p>
+          <p>Seu canal principal de notícias</p>
         </div>
       </section>
 
       <section class="news">
         <h2>Fique por dentro das notícias</h2>
 
-        <div class="newsCard">
+        <div class="cardContainer">
           <article class="card">
-            <div class="imgCard">
+            <div class="img">
               <img src="" alt="" />
             </div>
 
-            <div class="textCard">
+            <div class="textNews">
               <span> 00/00/0000 </span>
 
-              <h3>título</h3>
+              <h3>Title</h3>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, laudantium minus totam dolorem numquam provident
-                quaerat iure tempora commodi qui odit non fugit modi, cumque
-                nisi nobis assumenda nesciunt eligendi.
+                Aspernatur odio quisquam quia provident architecto veniam
+                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
+                odio architecto reprehenderit beatae pariatur dolores?
               </p>
-
-              <a href="" class="btnLink"> Leia mais </a>
             </div>
+
+            <a href="" class="btnLink">Leia mais</a>
+          </article>
+          <article class="card">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+
+            <div class="textNews">
+              <span> 00/00/0000 </span>
+
+              <h3>Title</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aspernatur odio quisquam quia provident architecto veniam
+                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
+                odio architecto reprehenderit beatae pariatur dolores?
+              </p>
+            </div>
+
+            <a href="" class="btnLink">Leia mais</a>
           </article>
 
           <article class="card">
-            <div class="imgCard">
+            <div class="img">
               <img src="" alt="" />
             </div>
 
-            <div class="textCard">
+            <div class="textNews">
               <span> 00/00/0000 </span>
 
-              <h3>título</h3>
+              <h3>Title</h3>
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, laudantium minus totam dolorem numquam provident
-                quaerat iure tempora commodi qui odit non fugit modi, cumque
-                nisi nobis assumenda nesciunt eligendi.
+                Aspernatur odio quisquam quia provident architecto veniam
+                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
+                odio architecto reprehenderit beatae pariatur dolores?
               </p>
-
-              <a href="" class="btnLink"> Leia mais </a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="imgCard">
-              <img src="" alt="" />
             </div>
 
-            <div class="textCard">
-              <span> 00/00/0000 </span>
-
-              <h3>título</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, laudantium minus totam dolorem numquam provident
-                quaerat iure tempora commodi qui odit non fugit modi, cumque
-                nisi nobis assumenda nesciunt eligendi. Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Delectus vel perferendis
-                fugit aliquam. Vitae harum tenetur veniam, dolore reiciendis
-                vero, minus mollitia ducimus fugiat doloremque quia neque
-                accusantium explicabo commodi!
-              </p>
-
-              <a href="" class="btnLink"> Leia mais </a>
-            </div>
+            <a href="" class="btnLink">Leia mais</a>
           </article>
         </div>
       </section>
@@ -166,101 +138,136 @@
       <section class="games">
         <h2>Mais Jogados</h2>
 
-        <div class="gameCard">
-          <article class="cardGame">
+        <div class="gamesContainer">
+          <article class="gameCard">
             <img src="" alt="" />
           </article>
-
-          <article class="cardGame">
+          <article class="gameCard">
             <img src="" alt="" />
           </article>
-
-          <article class="cardGame">
+          <article class="gameCard">
             <img src="" alt="" />
           </article>
-
-          <article class="cardGame">
+          <article class="gameCard">
             <img src="" alt="" />
           </article>
-
-          <article class="cardGame">
+          <article class="gameCard">
             <img src="" alt="" />
           </article>
         </div>
       </section>
 
       <section class="community">
-        <h2>Participe da comunidade</h2>
+        <h2>Participe da Comunidade</h2>
 
-        <div class="commCard">
+        <div class="cardContainer">
           <article class="card">
-            <div class="profUser">
-              <img src="" alt="Foto de Perfil Usuário" />
-              <h3>User</h3>
+            <div class="user">
+              <img src="" alt="" />
+              <h3>usr</h3>
             </div>
 
-            <div class="textComm">
+            <div class="descricao">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-                corporis, harum eveniet odit quam quidem doloribus nulla
-                reprehenderit autem inventore vero assumenda cum provident
-                voluptates repudiandae nemo excepturi. Quo, natus! Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Exercitationem,
-                voluptates odio ducimus nesciunt accusantium fugiat
-                necessitatibus cum nostrum blanditiis numquam, eum magni
-                distinctio! Eum neque ex sed autem error non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam in non exercitationem dignissimos animi labore delectus
+                doloremque harum? Eligendi asperiores debitis eius odit
+                reiciendis omnis necessitatibus rem ex molestiae veniam?
               </p>
 
-              <a href=""> Leia mais </a>
+              <div class="interact">
+                <a href="" class="actions">
+                  <i class="bi bi-chat-dots"></i>
+                </a>
+
+                <a href="" class="actions">
+                  <i class="bi bi-heart"></i>
+                </a>
+              </div>
+
+              <a href="" class="ver"> Ver mais</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="profUser">
-              <img src="" alt="Foto de Perfil Usuário" />
-              <h3>User</h3>
+            <div class="user">
+              <img src="" alt="" />
+              <h3>usr</h3>
             </div>
 
-            <div class="textComm">
+            <div class="descricao">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-                ratione laboriosam reprehenderit iste. Recusandae explicabo
-                reprehenderit, hic illo aperiam cum mollitia inventore nostrum
-                repudiandae iusto? Optio hic dolorum cupiditate. Dignissimos.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam in non exercitationem dignissimos animi labore delectus
+                doloremque harum? Eligendi asperiores debitis eius odit
+                reiciendis omnis necessitatibus rem ex molestiae veniam? Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Sint quos
+                quis amet cum sequi, soluta, laborum eum iusto eius incidunt
+                harum assumenda, illum quidem ullam mollitia corporis nostrum
+                perspiciatis vel?
               </p>
 
-              <a href=""> Leia mais </a>
+              <div class="interact">
+                <a href="" class="actions">
+                  <i class="bi bi-chat-dots"></i>
+                </a>
+
+                <a href="" class="actions">
+                  <i class="bi bi-heart"></i>
+                </a>
+              </div>
+              <a href="" class="ver"> Ver mais</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="profUser">
-              <img src="" alt="Foto de Perfil Usuário" />
-              <h3>User</h3>
+            <div class="user">
+              <img src="" alt="" />
+              <h3>usr</h3>
             </div>
 
-            <div class="textComm">
+            <div class="descricao">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-                corporis, harum eveniet odit quam quidem doloribus nulla
-                reprehenderit autem inventore vero assumenda cum provident
-                voluptates repudiandae nemo excepturi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam in non exercitationem dignissimos animi labore delectus
+                doloremque harum? Eligendi asperiores debitis eius odit
+                reiciendis omnis necessitatibus rem ex molestiae veniam?
               </p>
 
-              <a href=""> Leia mais </a>
+              <div class="interact">
+                <a href="" class="actions">
+                  <i class="bi bi-chat-dots"></i>
+                </a>
+
+                <a href="" class="actions">
+                  <i class="bi bi-heart"></i>
+                </a>
+              </div>
+
+              <a href="" class="ver"> Ver mais</a>
             </div>
           </article>
         </div>
-
-        <a href="" class="link">Ver mais</a>
       </section>
     </main>
 
-    <aside class="developers">
-      <section class="devCard">
-        <div class="devText"></div>
+    <aside>
+      <section class="devContainer">
+        <div class="textDev">
+          <h2>Conheça os nossos</h2>
 
-        <div class="devs"></div>
+          <span> Desenvolvedores </span>
+
+          <p>Saiba quem participou da criação do GameWired</p>
+        </div>
+
+        <div class="developers">
+          <a href="" class="dev"> Guilherme Bianchini </a>
+          <a href="" class="dev"> Julia Oliveira </a>
+          <a href="" class="dev"> Luiz Jeronimo </a>
+          <a href="" class="dev"> Pedro Henrique </a>
+          <a href="" class="dev"> Pedro Melquiades </a>
+        </div>
       </section>
     </aside>
 
@@ -268,7 +275,7 @@
       <section class="header">
         <div class="logo">
           <h3>GameWired</h3>
-          <img src="/sources/assets/images/Logo.svg" alt="Logo-GameWired" />
+          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
         </div>
       </section>
 
@@ -278,41 +285,44 @@
         <div class="about">
           <p>Projeto</p>
 
-          <a href=""> Sobre </a>
-          <a href=""> Marca </a>
-          <a href="">Suporte</a>
+          <a href="" class="linkFT"> Sobre </a>
+          <a href="" class="linkFT"> Marca </a>
+          <a href="" class="linkFT">Suporte</a>
         </div>
 
         <div class="navigation">
           <p>Navegação</p>
 
-          <a href="#home"> Home </a>
-          <a href="/pages/notices/news.html"> Notícias </a>
-          <a href="/src/pages/plataforma/platafor.html"> Plataformas </a>
-          <a href="/src/pages/comunidade/comuni.html"> Comunidade </a>
-          <a href=""> Login </a>
+          <a href="/index.html" class="linkFT"> Home </a>
+          <a href="#noticias" class="linkFT"> Notícias </a>
+          <a href="/src/pages/plataforma/platafor.html" class="linkFT">
+            Plataformas
+          </a>
+          <a href="/src/pages/comunidade/comuni.html" class="linkFT">
+            Comunidade
+          </a>
+          <a href="" class="linkFT"> Login </a>
         </div>
 
         <div class="social">
           <p>Social</p>
 
-          <a href="">
+          <a href="" class="linkFT">
             <i class="bi bi-instagram"> Instagram</i>
           </a>
-          <a href="">
+          <a href="" class="linkFT">
             <i class="bi bi-github"> GitHub</i>
           </a>
-          <a href="">
+          <a href="" class="linkFT">
             <i class="bi bi-twitter-x"> Twiter X</i>
           </a>
-          <a href="">
+          <a href="" class="linkFT">
             <i class="bi bi-pinterest"> Pinterest</i>
           </a>
         </div>
       </section>
     </footer>
 
-    <script src="/scripts/themas.js"></script>
-    <script src="/scripts/navBar.js"></script>
+    <script src="/assets/scripts/themes.js"></script>
   </body>
 </html>

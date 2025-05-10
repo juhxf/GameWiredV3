@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Outfit', 'SFPro', system-ui;
+
+  color-scheme: light dark;
+  background: var(--fundo);
+  color: var(--fontes);
+  line-height: 1.6;
+
+}
+
+.eclipse::before{
+  content: "";
+  position: fixed;
+  height: 800px;
+  width: 800px;
+  background: var(--eclipse);
+  border-radius: 100%;
+  filter: blur(180px);
+  top: -35%;
+  right: -10%;
+  z-index: -1;
+
+}

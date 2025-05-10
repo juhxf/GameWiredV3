@@ -1,0 +1,74 @@
+header, nav{
+    height: 9vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(80px);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navLogo img{
+    height: 80px;
+    width: 80px;
+}
+
+.navCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navCenter .abas{
+    position: relative;
+    font-weight: 600;
+
+    &:hover{
+        color: var(--buttons);
+        transition: 0.3s;
+    }
+}
+
+.abas::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--buttons);
+    transition: width 0.3s ease-in-out;
+
+}
+
+.abas:hover::after{
+    width: 100%;
+    background: var(--buttons);
+    transition: width 0.3s ease-in-out;
+}
+
+.navUser{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.navUser .btnUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 7vh;
+    width: 4vw;
+}
+
+.navUser .bi{
+    font-size: 2em;
+}

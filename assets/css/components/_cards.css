@@ -1,0 +1,109 @@
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: auto;
+    width: 85%;
+    gap: 5%;
+}
+
+.card{
+    display: flex;
+    align-items: start;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cards);
+    height: auto;
+    width: 360px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card img{
+    height: 250px;
+    width: 320px;
+    border-radius: 20px;
+    background: var(--fontes);
+}
+
+.textNews{
+    margin: 1vh 0;
+    height: 280px;
+    position: relative;
+}
+
+.textNews p{
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+.textNews p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(transparent, rgb(25, 25, 25));
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.descricao{
+    height: 280px;
+    position: relative;
+}
+
+.descricao > p{
+    margin: 2vh 0;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(transparent, rgb(25, 25, 25));
+    }
+}
+
+.interact{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.actions{
+    margin: 0 0.5vw;
+    font-size: 1.5em;
+
+    &:hover{
+        color: var(--buttons);
+        transition: 0.3s ease;
+    }
+}
+
+.ver{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: underline;
+
+    &:hover{
+        color: var(--buttons);
+        transition: 0.3s ease;
+    }
+}
