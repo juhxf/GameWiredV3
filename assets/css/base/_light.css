@@ -40,6 +40,10 @@
     color: var(--fontes);
   }
 
+  .cardCommunity{
+    background: var(--cardsLight);
+  }
+
   footer{
     background: var(--cardsLight);
   }

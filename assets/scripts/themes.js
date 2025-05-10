@@ -6,9 +6,9 @@ function toggle(){
 
     if (body.classList.contains('lightTheme')) {
         icon.classList.replace('bi-sun', 'bi-moon-stars');
-        body.style.transition = "2s";
+        body.style.transition = "3s";
     } else {
         icon.classList.replace('bi-moon-stars', 'bi-sun');
-        body.style.transition = "2s";
+        body.style.transition = "3s";
     }
 }

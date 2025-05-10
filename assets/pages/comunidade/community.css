@@ -1,0 +1,95 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.asideBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.asideBar .searchBar{
+    background: var(--fontes);
+    position: fixed;
+    top: 14%;
+    left: 7%;
+    border-radius: 100px;
+    height: 5vh;
+    width: 18vw;
+
+    &::placeholder{
+        padding: 15px;
+        color: var(--eclipse);
+    }
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.cardCommunity{
+    height: auto;
+    width: 70%;
+    margin: 5vh 0;
+    border-radius: 20px;
+    background: var(--cards);
+    padding: 20px;
+}
+
+
+.profileUsr{
+    display: flex;
+    align-items: center;
+}
+
+.profileUsr img{
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+}
+
+.cardPost img{
+    height: 400px;
+    width: 880px;
+    max-height: 400px;
+    width: 880px;
+}
+
+.interaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 3vh;
+    gap: 10%;
+}
+
+.actions{
+    position: relative;
+    bottom: 0;
+}
+
+.actions > span{
+    font-size: 0.8em;
+}
+
+.bi{
+    font-size: 1.125em;
+}
+
+.usrAction {
+    position: relative;
+}
