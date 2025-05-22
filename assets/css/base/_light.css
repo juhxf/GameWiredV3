@@ -9,4 +9,32 @@
   .bi{
     color: var(--bg-Font2);
   }
+
+  .card-link{
+    color: var(--bg-Font);
+  }
+
+  .card__news, .card__community{
+    background: var(--bg-Card2);
+  }
+
+  .card__news{
+    .card-text{
+      p{
+        &::before{
+          background: linear-gradient(transparent, #ffffff);
+        }
+      }
+    }
+  }
+
+  .card__community{
+    .card-description{
+      p{
+        &::before{
+          background: linear-gradient(transparent, #ffffff);
+        }
+      }
+    }
+  }
 }

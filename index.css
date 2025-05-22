@@ -62,7 +62,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
 
     .carousel-community{
         display: flex;
@@ -215,6 +215,10 @@ main{
         .gamewired{
             font-size: 2.5em;
 
+        }
+
+        p{
+            font-size: 1em;
         }
     }
 
