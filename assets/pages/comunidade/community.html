@@ -22,322 +22,123 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/pages/comunidade/community.css" />
 
-    <title>GameWired | Comunidade</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/pages/comunidade/community.css">
+
+
+    <title>GameWired</title>
   </head>
   <body>
     <div class="eclipse"></div>
-
     <header>
-      <nav>
-        <div class="navLogo">
-          <a href="/index.html">
-            <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
-          </a>
+        <nav>
+            <div class="nav__logo">
+                <img
+                    src="/src/images/Logo.svg" alt="Logo-GameWired"
+                    />
+            </div>
+
+            <div class="nav__center">
+                <a href="/assets/pages/noticias/news.html" class="abas">
+                    Notícias
+                </a>
+                <a href="" class="abas">
+                    Plataformas
+                </a>
+                <a href="/assets/pages/comunidade/community.html" class="abas">
+                    Comunidade
+                </a>
+            </div>
+
+            <div class="nav__user">
+                <button onclick="toggle()" class="theme">
+                    <i class="bi bi-brightness-low"></i>
+                </button>
+                <button href="" class="user__profile">
+                    <i class="bi bi-person-badge"></i>
+                </button>
+            </div>
+
+            <div class="nav__menu">
+                <button onclick="toggle()" class="theme">
+                    <i class="bi bi-brightness-low"></i>
+                </button>
+
+                <button onclick="openMenu()" class="menu-button">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="nav__mobile">
+            <button href="" class="user-profile">
+                <i class="bi bi-person-badge"></i>
+            </button>
+
+            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+                Notícias
+            </a>
+            <a href="" class="abas-mobile">
+                Plataformas
+            </a>
+            <a href="" class="abas-mobile">
+                Comunidade
+            </a>
         </div>
-
-        <div class="navCenter">
-          <a href="/assets/pages/noticias/news.html" class="abas"> Notícias </a>
-          <a href="" class="abas"> Plataformas </a>
-          <a href="/assets/pages/comunidade/community.html" class="abas">
-            Comunidade
-          </a>
-        </div>
-
-        <div class="navUser">
-          <button onclick="toggle()" class="btnUser">
-            <i class="bi bi-moon-stars"></i>
-          </button>
-
-          <button class="btnUser">
-            <i class="bi bi-person-circle"></i>
-          </button>
-
-          <button></button>
-        </div>
-      </nav>
     </header>
 
     <main>
-      <section class="side">
-        <div class="asideBar">
-          <form action="">
-            <input type="search" placeholder="Buscar" class="searchBar" />
-          </form>
-        </div>
-
-        <div class="groups"></div>
-      </section>
-
-      <section class="posts">
-        <article class="cardCommunity">
-          <div class="profileUsr">
-            <img src="" alt="" />
-            <h4>user</h4>
-          </div>
-
-          <div class="cardPost">
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              suscipit quisquam molestias laboriosam omnis sint necessitatibus
-              laborum
-            </h3>
-
-            <img src="" alt="" />
-
-            <div class="interaction">
-              <a href="" class="actions">
-                <i class="bi bi-chat-dots"></i>
-                <span>3.190</span>
+      <section class="container__community">
+        <aside class="left">
+          <div class="profile">
+            <div class="user">
+              <a href="">
+                <img src="" alt="">
               </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-heart"></i>
-                <span>2.867</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-arrow-repeat"></i>
-                <span>822</span>
-              </a>
-
-              <div class="usrAction">
-                <a href="" class="actions">
-                  <i class="bi bi-bookmark-heart"></i>
-                </a>
-
-                <a href="" class="actions">
-                  <i class="bi bi-share"></i>
-                </a>
-              </div>
+              <h4>Name</h4>
             </div>
+
+            <label for="create-post" class="btn-post">Criar Publicação</label>
           </div>
+
+          <div class="sidebar">
+            <h3>Grupos</h3>
+
+            <a href="" class="side-item">
+              <img src="" alt="">
+              <p>Valorant</p>
+            </a>
+            <a href="" class="side-item">
+              <img src="" alt="">
+              <p>CS:GO</p>
+            </a>
+            <a href="" class="side-item">
+              <img src="" alt="">
+              <p>League of Legends</p>
+            </a>
+            <a href="" class="side-item">
+              <img src="" alt="">
+              <p>Dota2</p>
+            </a>
+          </div>
+
+          <div></div>
+        </aside>
+
+        <article class="middle">
+
         </article>
 
-        <article class="cardCommunity">
-          <div class="profileUsr">
-            <img src="" alt="" />
-            <h4>user</h4>
-          </div>
+        <aside class="right">
 
-          <div class="cardPost">
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              suscipit quisquam molestias laboriosam omnis sint necessitatibus
-              laborum
-            </h3>
-
-            <div class="interaction">
-              <a href="" class="actions">
-                <i class="bi bi-chat-dots"></i>
-                <span>3.190</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-heart"></i>
-                <span>2.867</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-arrow-repeat"></i>
-                <span>822</span>
-              </a>
-
-              <div class="usrAction">
-                <a href="" class="actions">
-                  <i class="bi bi-bookmark-heart"></i>
-                </a>
-
-                <a href="" class="actions">
-                  <i class="bi bi-share"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cardCommunity">
-          <div class="profileUsr">
-            <img src="" alt="" />
-            <h4>user</h4>
-          </div>
-
-          <div class="cardPost">
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              suscipit quisquam molestias laboriosam omnis sint necessitatibus
-              laborum
-            </h3>
-
-            <img src="" alt="" />
-
-            <div class="interaction">
-              <a href="" class="actions">
-                <i class="bi bi-chat-dots"></i>
-                <span>3.190</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-heart"></i>
-                <span>2.867</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-arrow-repeat"></i>
-                <span>822</span>
-              </a>
-
-              <div class="usrAction">
-                <a href="" class="actions">
-                  <i class="bi bi-bookmark-heart"></i>
-                </a>
-
-                <a href="" class="actions">
-                  <i class="bi bi-share"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cardCommunity">
-          <div class="profileUsr">
-            <img src="" alt="" />
-            <h4>user</h4>
-          </div>
-
-          <div class="cardPost">
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-              suscipit quisquam molestias laboriosam omnis sint necessitatibus
-              laborum
-            </h3>
-
-            <img src="" alt="" />
-
-            <div class="interaction">
-              <a href="" class="actions">
-                <i class="bi bi-chat-dots"></i>
-                <span>3.190</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-heart"></i>
-                <span>2.867</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-arrow-repeat"></i>
-                <span>822</span>
-              </a>
-
-              <div class="usrAction">
-                <a href="" class="actions">
-                  <i class="bi bi-bookmark-heart"></i>
-                </a>
-
-                <a href="" class="actions">
-                  <i class="bi bi-share"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cardCommunity">
-          <div class="profileUsr">
-            <img src="" alt="" />
-            <h4>user</h4>
-          </div>
-
-          <div class="cardPost">
-            <img src="" alt="" />
-
-            <div class="interaction">
-              <a href="" class="actions">
-                <i class="bi bi-chat-dots"></i>
-                <span>3.190</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-heart"></i>
-                <span>2.867</span>
-              </a>
-
-              <a href="" class="actions">
-                <i class="bi bi-arrow-repeat"></i>
-                <span>822</span>
-              </a>
-
-              <div class="usrAction">
-                <a href="" class="actions">
-                  <i class="bi bi-bookmark-heart"></i>
-                </a>
-
-                <a href="" class="actions">
-                  <i class="bi bi-share"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
+        </aside>
       </section>
     </main>
 
-    <footer>
-      <section class="header">
-        <div class="logo">
-          <h3>GameWired</h3>
-          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
-        </div>
-      </section>
-
-      <spans>Projeto facultativo</spans>
-
-      <section class="info">
-        <div class="about">
-          <p>Projeto</p>
-
-          <a href="" class="linkFT"> Sobre </a>
-          <a href="" class="linkFT"> Marca </a>
-          <a href="" class="linkFT">Suporte</a>
-        </div>
-
-        <div class="navigation">
-          <p>Navegação</p>
-
-          <a href="#home" class="linkFT"> Home </a>
-          <a href="/assets/pages/noticias/news.html" class="linkFT">
-            Notícias
-          </a>
-          <a href="/assets/pages/" class="linkFT"> Plataformas </a>
-          <a href="/assets/pages/comunidade/community.html" class="linkFT">
-            Comunidade
-          </a>
-          <a href="" class="linkFT"> Login </a>
-        </div>
-
-        <div class="social">
-          <p>Social</p>
-
-          <a href="" class="linkFT">
-            <i class="bi bi-instagram"> Instagram</i>
-          </a>
-          <a href="" class="linkFT">
-            <i class="bi bi-github"> GitHub</i>
-          </a>
-          <a href="" class="linkFT">
-            <i class="bi bi-twitter-x"> Twiter X</i>
-          </a>
-          <a href="" class="linkFT">
-            <i class="bi bi-pinterest"> Pinterest</i>
-          </a>
-        </div>
-      </section>
-    </footer>
-
     <script src="/assets/scripts/themes.js"></script>
+    <script src="/assets/scripts/_navMobile.js"></script>
   </body>
 </html>

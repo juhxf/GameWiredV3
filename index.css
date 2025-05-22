@@ -62,7 +62,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
 
     .carousel-community{
         display: flex;
@@ -78,6 +78,49 @@ main{
         justify-content: space-between;
         width: 100%;
 
+    }
+}
+
+.developers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    .card__dev{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        width: 70%;
+        height: 500px;
+        background: var(--bg-Card);
+
+
+        .dev-text{
+            span{
+                color: var(--bg-Button);
+                font-size: 3em;
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 1em ;
+            }
+        }
+
+        .dev-creators{
+            display: flex;
+            flex-direction: column;
+
+            .dev{
+                text-align: center;
+                border-radius: 8px;
+                margin: 1.5vh 0;
+                padding: 0.6em 5em;
+                background: var(--bg-Button);
+            }
+        }
     }
 }
 
@@ -114,6 +157,10 @@ main{
 
     .community{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100%;
 
         .carousel-community{
@@ -121,12 +168,12 @@ main{
             align-items: center;
             justify-content: center;
             position: relative;
-            width: 90%;
-            margin: 0 auto;
+            width: 80%;
 
         }
 
         .carousel-wrapper-community{
+            scroll-snap-align: center;
             flex: 0 0 100%;
             display: flex;
             gap: 2em;
@@ -138,8 +185,42 @@ main{
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
         }
+
+
     }
 
+    .developers{
+        margin-bottom: 5vh;
+        height: 120%;
+
+        .card__dev{
+            text-align: center;
+            width: 80%;
+            flex-direction: column;
+            height: 600px;
+
+            .dev-text{
+
+                span{
+                    color: var(--bg-Button);
+                    font-size: 3em;
+
+                }
+
+            }
+
+        .dev-creators{
+           .dev{
+                text-align: center;
+                text-wrap: nowrap;
+                border-radius: 8px;
+                margin: 1.5vh 0;
+                padding: 0.6em 10em;
+                background: var(--bg-Button);
+                }
+            }
+        }
+    }
 
 }
 
@@ -202,6 +283,37 @@ main{
         }
     }
 
+    .developers{
+        margin-bottom: 5vh;
+        height: 120%;
+
+        .card__dev{
+            text-align: center;
+            width: 80%;
+            flex-direction: column;
+
+            .dev-text{
+
+                span{
+                    color: var(--bg-Button);
+                    font-size: 2em;
+
+                }
+
+            }
+
+        .dev-creators{
+           .dev{
+                text-align: center;
+                text-wrap: nowrap;
+                border-radius: 8px;
+                margin: 1.5vh 0;
+                padding: 0.6em 2.75em;
+                background: var(--bg-Button);
+                }
+            }
+        }
+    }
 
 
 
@@ -268,6 +380,38 @@ main{
             padding: 1rem;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    .developers{
+        margin-bottom: 5vh;
+        height: 120%;
+
+        .card__dev{
+            text-align: center;
+            width: 80%;
+            flex-direction: column;
+
+            .dev-text{
+
+                span{
+                    color: var(--bg-Button);
+                    font-size: 2em;
+
+                }
+
+            }
+
+        .dev-creators{
+           .dev{
+                text-align: center;
+                text-wrap: nowrap;
+                border-radius: 8px;
+                margin: 1.5vh 0;
+                padding: 0.6em 2.75em;
+                background: var(--bg-Button);
+                }
+            }
         }
     }
 

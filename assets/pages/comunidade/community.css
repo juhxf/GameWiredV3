@@ -1,95 +1,70 @@
 main{
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
+    position: relative;
+    top: 5.4em;
 }
 
-.side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
+.container__community{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    position: relative;
 
-}
+    .left{
+        height: max-content;
+        position: sticky;
+        top: 5.4em;
+        margin-left: 1vw;
 
-.asideBar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-}
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--bg-Card);
+            border-radius: 20px;
+            padding: 20px;
 
-.asideBar .searchBar{
-    background: var(--fontes);
-    position: fixed;
-    top: 14%;
-    left: 7%;
-    border-radius: 100px;
-    height: 5vh;
-    width: 18vw;
+            gap: 1em;
 
-    &::placeholder{
-        padding: 15px;
-        color: var(--eclipse);
+            .user{
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100px ;
+                }
+            }
+        }
+
+
+        .sidebar{
+            margin-top: 1em;
+            background: var(--bg-Card);
+            border-radius: 20px;
+            padding: 1em;
+
+            .side-item{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                translate: all 300ms ease;
+                position: relative;
+                border-radius: 20px;
+
+                img{
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 100px ;
+                }
+
+                p{
+                    margin-left: 1vw;
+                }
+
+                &:hover{
+                    background: var(--bg-Eclipse);
+                }
+            }
+        }
     }
-}
-
-.posts{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-.cardCommunity{
-    height: auto;
-    width: 70%;
-    margin: 5vh 0;
-    border-radius: 20px;
-    background: var(--cards);
-    padding: 20px;
-}
-
-
-.profileUsr{
-    display: flex;
-    align-items: center;
-}
-
-.profileUsr img{
-    height: 25px;
-    width: 25px;
-    border-radius: 100px;
-}
-
-.cardPost img{
-    height: 400px;
-    width: 880px;
-    max-height: 400px;
-    width: 880px;
-}
-
-.interaction{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    margin-top: 3vh;
-    gap: 10%;
-}
-
-.actions{
-    position: relative;
-    bottom: 0;
-}
-
-.actions > span{
-    font-size: 0.8em;
-}
-
-.bi{
-    font-size: 1.125em;
-}
-
-.usrAction {
-    position: relative;
 }
