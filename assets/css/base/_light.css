@@ -1,50 +1,12 @@
 .lightTheme{
-  background: var(--fundoLight);
-  color: var(--fontesLight);
+  background: var(--bg-Background2);
+  color: var(--bg-Font2);
 
   .eclipse::before{
-    background: var(--eclipseLight);
+    background: var(--bg-Eclipse2);
   }
 
-  .btnUser{
-    color: var(--fontesLight);
-  }
-
-  .card{
-    background: var(--cardsLight);
-  }
-
-  .textNews p::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(transparent, rgb(222, 222, 222));
-  }
-
-  .descricao p::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(transparent, rgb(222, 222, 222));
-  }
-
-  .devContainer{
-     background: var(--cardsLight);
-  }
-
-  .dev{
-    color: var(--fontes);
-  }
-
-  .cardCommunity{
-    background: var(--cardsLight);
-  }
-
-  footer{
-    background: var(--cardsLight);
+  .bi{
+    color: var(--bg-Font2);
   }
 }

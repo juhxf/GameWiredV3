@@ -5,10 +5,10 @@ function toggle(){
     body.classList.toggle('lightTheme');
 
     if (body.classList.contains('lightTheme')) {
-        icon.classList.replace('bi-sun', 'bi-moon-stars');
+        icon.classList.replace('bi-brightness-low', 'bi-moon-stars');
         body.style.transition = "3s";
     } else {
-        icon.classList.replace('bi-moon-stars', 'bi-sun');
+        icon.classList.replace('bi-moon-stars', 'bi-brightness-low');
         body.style.transition = "3s";
     }
 }

@@ -8,10 +8,12 @@ body{
   font-family: 'Outfit', 'SFPro', system-ui;
 
   color-scheme: light dark;
-  background: var(--fundo);
-  color: var(--fontes);
+  position: relative;
+  background: var(--bg-Background);
+  color: var(--bg-Font);
   line-height: 1.6;
   transition: all 3s ease;
+
 
 }
 
@@ -20,9 +22,9 @@ body{
   position: fixed;
   height: 800px;
   width: 800px;
-  background: var(--eclipse);
+  background: var(--bg-Eclipse);
   border-radius: 100%;
-  filter: blur(180px);
+  filter: blur(200px);
   top: -35%;
   right: -10%;
   z-index: -1;

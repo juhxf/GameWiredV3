@@ -30,239 +30,292 @@
   <body>
     <div class="eclipse"></div>
 
-    <header>
-      <nav>
-        <div class="navLogo">
-          <a href="/index.html">
-            <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
-          </a>
+   <header>
+        <nav>
+            <div class="nav__logo">
+                <a href="/index.html">
+                    <img
+                        src="/src/images/Logo.svg"
+                        alt="Logo-GameWired"
+                        />
+                </a>
+            </div>
+
+            <div class="nav__center">
+                <a href="/assets/pages/noticias/news.html" class="abas">
+                    Notícias
+                </a>
+                <a href="" class="abas">
+                    Plataformas
+                </a>
+                <a href="" class="abas">
+                    Comunidade
+                </a>
+            </div>
+
+            <div class="nav__user">
+                <button onclick="toggle()" class="theme">
+                    <i class="bi bi-brightness-low"></i>
+                </button>
+                <button href="" class="user__profile">
+                    <i class="bi bi-person-badge"></i>
+                </button>
+            </div>
+
+            <div class="nav__menu">
+                <button onclick="toggle()" class="theme">
+                    <i class="bi bi-brightness-low"></i>
+                </button>
+
+                <button onclick="openMenu()" class="menu-button">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="nav__mobile">
+            <button href="" class="user-profile">
+                <i class="bi bi-person-badge"></i>
+            </button>
+
+            <a href="" class="abas-mobile">
+                Notícias
+            </a>
+            <a href="" class="abas-mobile">
+                Plataformas
+            </a>
+            <a href="" class="abas-mobile">
+                Comunidade
+            </a>
         </div>
-
-        <div class="navCenter">
-          <a href="/assets/pages/news.html" class="abas"> Notícias </a>
-          <a href="" class="abas"> Plataformas </a>
-          <a href="/assets/pages/comunidade/community.html" class="abas">
-            Comunidade
-          </a>
-        </div>
-
-        <div class="navUser">
-          <button onclick="toggle()" class="btnUser">
-            <i class="bi bi-moon-stars"></i>
-          </button>
-
-          <button class="btnUser">
-            <i class="bi bi-person-circle"></i>
-          </button>
-
-          <button></button>
-        </div>
-      </nav>
     </header>
 
     <main id="noticias">
-      <div class="search">
-        <h1>Notícias</h1>
-
-        <form action="">
-          <input type="search" placeholder="O que procura?" class="barSearch" />
-          <button onclick="buscar" class="btnSearch">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-      </div>
-
-      <section class="news">
-        <div class="cardContainer">
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
+        <section class="news">
+            <div class="search__news">
+                <h1>
+                    Notícias
+                </h1>
+                <form action="" class="section-search">
+                    <input type="search" placeholder="O que procura?" class="bar-search">
+                    <button class="btn-search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
             </div>
 
-            <div class="textNews">
-              <span> 00/00/0000 </span>
+            <div class="container">
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
 
-              <h3>Title</h3>
+                        <h3>
+                            Title
+                        </h3>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__news">
+                    <div class="card-img">
+                        <img
+                            src=""
+                            alt="" />
+                    </div>
+                    <div class="card-text">
+                        <span class="date">00/00/0000</span>
+
+                        <h3>
+                            Title
+                        </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
+                        </p>
+
+                        <a href="" class="card-link">
+                            Leia mais
+                        </a>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-
-          <article class="card">
-            <div class="img">
-              <img src="" alt="" />
-            </div>
-
-            <div class="textNews">
-              <span> 00/00/0000 </span>
-
-              <h3>Title</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aspernatur odio quisquam quia provident architecto veniam
-                aliquam voluptatum illum. Laborum provident aut aliquam ex enim
-                odio architecto reprehenderit beatae pariatur dolores?
-              </p>
-            </div>
-
-            <a href="" class="btnLink">Leia mais</a>
-          </article>
-        </div>
-      </section>
     </main>
 
     <footer>

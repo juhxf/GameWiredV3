@@ -1,17 +1,40 @@
-.btnLink{
+.card-link{
     border-radius: 8px;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
-    background: var(--buttons);
-    color: var(--fontes);
+    background: var(--bg-Button);
 }
 
-.btnSearch{
+.btn-search{
+    background: var(--bg-Button);
+    border-radius: 100px;
     height: 5vh;
     width: 2.5vw;
-    background: var(--buttons);
-    border-radius: 100%;
-    margin: 0 0.5vw;
+    margin: 0 0.6vw;
+
+}
+
+@media screen and (max-width: 840px) {
+    .card-link{
+        position: absolute;
+        bottom: -3em;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .card-link{
+        position: static;
+
+    }
+}
+
+@media screen and (max-width: 484px) {
+
+}
+
+@media screen and (max-width: 390px) {
+
 }

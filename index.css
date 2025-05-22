@@ -1,0 +1,271 @@
+main{
+    margin: 10vh 0;
+}
+
+.welcome{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & .gamewired{
+        font-size: 4.5em;
+        font-weight: 800;
+        color: var(--bg-Button);
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 110vh;
+}
+
+.games{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    z-index: 1;
+
+    .carousel{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .carousel-wrapper{
+        display: flex;
+        gap: 2rem;
+        height: auto;
+        width: 100%;
+        scroll-snap-type: none;
+        overflow-x: hidden;
+        padding: 1rem;
+
+    }
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+
+    .carousel-community{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 2vh 0;
+    }
+
+    .carousel-wrapper-community{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .welcome{
+        height: 40vh;
+
+        .gamewired{
+            font-size: 3.5em;
+
+        }
+    }
+
+    .news{
+        text-align: center;
+        height: 90%;
+    }
+
+    .games{
+        height: 100%;
+
+        .carousel-wrapper{
+            display: flex;
+            gap: 2rem;
+            height: auto;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    .community{
+        text-align: center;
+        height: 100%;
+
+        .carousel-community{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        .carousel-wrapper-community{
+            flex: 0 0 100%;
+            display: flex;
+            gap: 2em;
+            height: auto;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 484px) {
+    .welcome{
+        height: 30vh;
+
+        .gamewired{
+            font-size: 3em;
+
+        }
+    }
+
+    .news{
+        text-align: center;
+        height: 90%;
+    }
+
+    .games{
+        height: 100%;
+
+
+        .carousel-wrapper{
+            display: flex;
+            gap: 2rem;
+            height: auto;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    .community{
+        text-align: center;
+        height: 100%;
+
+        .carousel-community{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        .carousel-wrapper-community{
+            flex: 0 0 100%;
+            display: flex;
+            gap: 2em;
+            height: auto;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 390px) {
+    .welcome{
+        text-align: center;
+        height: 40vh;
+
+        .gamewired{
+            font-size: 2.5em;
+
+        }
+    }
+
+    .news{
+        text-align: center;
+        height: 90%;
+    }
+
+    .games{
+        height: 100%;
+
+
+        .carousel-wrapper{
+            display: flex;
+            gap: 2rem;
+            height: auto;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    .community{
+        text-align: center;
+        height: 120%;
+
+        .carousel-community{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        .carousel-wrapper-community{
+            flex: 0 0 100%;
+            display: flex;
+            gap: 2em;
+            height: auto;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+            overflow-x: scroll;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+
+}

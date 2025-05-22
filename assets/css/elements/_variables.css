@@ -1,7 +1,7 @@
-:root{
+/*:root{
    --fundo: rgba(0, 0, 0);
     --fonts-footer: rgb(80, 79, 79);
-    --eclipse: rgba(40, 35, 72);
+    --eclipse: #282348;
     --buttons: rgba(133, 117, 241);
     --fontes: rgba(255, 255, 255);
     --cards: rgb(25, 25, 25);
@@ -12,4 +12,30 @@
         --buttonsLight: rgba(133, 117, 241);
         --fontesLight: rgb(35, 30, 64);
         --cardsLight: rgb(222, 222, 222);
+}
+
+:root{
+    --bg-Button2: #0367Fc;
+    --bg-Button: #0691ff;
+    --bg-Background: #2D425c;
+    --bg_Background2: #161616;
+    --bg-Font:
+}
+*/
+
+:root{
+    --bg-Background: #161616;
+    --bg-Eclipse:   #282348;  /*#282348;#34275C;*/
+    --bg-Button:  rgba(133, 117, 241);/*#00E4FF;#0367Fc;*/
+    --bg-Font: #f9fcff;
+    --bg-Card: #191919;
+
+    --bg-Inter: #FF00FF;
+    --bg-Effect: #ffffff;
+    --bg-Gradient: #34275C → #161616;
+    --bg-Objects: #C0C0C0;
+
+    --bg-Background2: #f9fcff;
+    --bg-Eclipse2: #00E4FF;
+    --bg-Font2: #282348;
 }
