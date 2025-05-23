@@ -17,6 +17,7 @@ html{
     font-weight: 400;
 }
 
+
 h1{
     font-size: 4em;
     font-weight: 800;
@@ -36,8 +37,8 @@ p, span, a{
     font-size: 1.125em;
 }
 
-@media screen and (max-width: 840px){
-    h1{
+@media screen and (max-width: 1024px) {
+        h1{
         font-size: 3em;
         font-weight: 800;
     }
@@ -57,7 +58,28 @@ p, span, a{
     }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 768px) {
+        h1{
+        font-size: 3em;
+        font-weight: 800;
+    }
+
+    h2{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    p, span, a{
+        font-size: 1.125em;
+    }
+}
+
+@media screen and (max-width: 480px) {
     h1{
         font-size: 2.5em;
         font-weight: 800;
@@ -70,27 +92,6 @@ p, span, a{
 
     h3{
         font-size: 1.5em;
-        font-weight: 500;
-    }
-
-    p, span, a{
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    h1{
-        font-size: 2em;
-        font-weight: 800;
-    }
-
-    h2{
-        font-size: 1.5em;
-        font-weight: 600;
-    }
-
-    h3{
-        font-size: 1.25em;
         font-weight: 500;
     }
 

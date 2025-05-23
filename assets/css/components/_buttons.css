@@ -23,29 +23,28 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 840px) {
-    .card-link{
+@media screen and (max-width: 320px) {
+    .btn-post{
+       padding: 0.4em 0.4em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+     .card-link{
         position: absolute;
         bottom: -3em;
         right: 0;
     }
 }
 
-@media screen and (max-width: 640px){
-    .card-link{
+@media screen and (max-width: 768px) {
+     .card-link{
         position: static;
 
     }
 }
 
-@media screen and (max-width: 484px) {
-
-}
-
-@media screen and (max-width: 390px) {
-
-}
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .btn-post{
        padding: 0.4em 0.4em;
     }

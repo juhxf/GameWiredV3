@@ -1,6 +1,8 @@
 main{
     position: relative;
     top: 5.4em;
+    margin-bottom: 10vh;
+
 }
 
 .container__community{
@@ -9,6 +11,7 @@ main{
     gap: 10%;
     position: relative;
     z-index: -1;
+
 
     .left{
         height: max-content;
@@ -258,9 +261,13 @@ main{
 }
 
 @media screen and (max-width: 768px) {
+    main{
+        height: 100%;
+        margin-bottom: 20vh;
+    }
+
     .container__community{
         grid-template-columns: 30vw auto;
-
 
 
         .middle{
