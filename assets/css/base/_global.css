@@ -7,7 +7,7 @@ html{
 body{
   font-family: 'Outfit', 'SFPro', system-ui;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   position: relative;
   background: var(--bg-Background);
   color: var(--bg-Font);

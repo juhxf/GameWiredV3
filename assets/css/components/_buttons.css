@@ -20,6 +20,7 @@
     background: var(--bg-Button);
     padding: 0.6em 1.2em;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 840px) {
@@ -43,4 +44,9 @@
 
 @media screen and (max-width: 390px) {
 
+}
+@media screen and (max-width: 320px) {
+    .btn-post{
+       padding: 0.4em 0.4em;
+    }
 }
