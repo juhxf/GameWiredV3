@@ -102,7 +102,7 @@ td, th {
 img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
   max-width: 100%;
-  vertical-align: middle;
+
 }
 
 img {

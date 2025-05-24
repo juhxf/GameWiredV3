@@ -11,7 +11,7 @@
 
 .card__news{
     width: 369px;
-    height: 655px;
+    height: auto;
     display: flex;
     position: relative;
     align-items: center;
@@ -29,6 +29,8 @@
             height: 260px;
             border-radius: 18px;
             background: var(--bg-Fonts);
+            filter: brightness(80%);
+            object-fit: cover;
         }
     }
 
@@ -39,6 +41,7 @@
         .date{
             font-size: 1em;
         }
+
 
         p{
             margin: 0.5vh 0 3vh;
