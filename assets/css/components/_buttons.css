@@ -1,4 +1,4 @@
-.card-link{
+.card-link, .btn-Login{
     border-radius: 8px;
     padding: 0.6em 1.2em;
     font-size: 1em;
@@ -11,7 +11,7 @@
     background: var(--bg-Button);
     border-radius: 100px;
     height: 5vh;
-    width: 2.5vw;
+    width: 3vw;
     margin: 0 0.6vw;
 
 }
@@ -21,6 +21,10 @@
     padding: 0.6em 1.2em;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.btn-Login{
+    margin: 1vh 0.5vw;
 }
 
 @media screen and (max-width: 320px) {
@@ -45,6 +49,14 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .btn-search{
+        height: 10vh;
+        width: 15vw;
+        margin: 0 0.6vw;
+
+    }
+
     .btn-post{
        padding: 0.4em 0.4em;
     }

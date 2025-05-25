@@ -5,27 +5,26 @@
     justify-content: center;
     text-align: center;
     height: 50vh;
+    width: 100%;
 
 
 .section-search{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
-        .bar-search[type="search"]{
+        .bar-search{
             background: var(--bg-Font);
             color: var(--bg-Eclipse);
             height: 5vh;
             border-radius: 100px;
-            width: 20vw;
+            width: 25%;
             padding: 20px;
 
             &::placeholder{
                 color: var(--bg-Eclipse);
             }
-
-
-
 
         }
     }
@@ -58,4 +57,7 @@
 }
 
 @media screen and (max-width: 320px) {
+
+
+
 }

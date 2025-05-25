@@ -62,7 +62,7 @@
 }
 
 .card__game {
-        flex: 0 0 15%;
+        flex: 0 0 16%;
         align-items: center;
         margin: 2vh 5vw 2vh 0;
         width: 210px;
@@ -76,7 +76,7 @@
 }
 
 .card__community{
-    height: 400px;
+    height: auto;
     width: 347px;
     border-radius: 20px;
     background: var(--bg-Card);
@@ -91,6 +91,7 @@
             height: 40px;
             width: 40px;
             border-radius: 100%;
+            border: 2.5px solid var(--bg-Eclipse) ;
         }
 
         h3{
@@ -382,6 +383,44 @@
         margin: 2vh 5vw 2vh 0;
         width: 347px;
         height: 400px;
+        align-items: center;
+        border-radius: 20px;
+        padding: 2em;
+        scroll-snap-align: center;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .card__news{
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+
+        .card-img{
+            img{
+                width: 340px;
+                height: 280px;
+            }
+        }
+    }
+
+    .card__game {
+        flex: 0 0 90%;
+        margin: 2vh 5vw 2vh 0;
+        width: 280px;
+        height: 300px;
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        padding: 2em;
+        scroll-snap-align: center;
+    }
+
+    .card__community{
+        flex: 0 0 100%;
+        margin: 2vh 5vw 2vh 0;
+        width: 380px;
+        height: auto;
         align-items: center;
         border-radius: 20px;
         padding: 2em;
