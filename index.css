@@ -1,237 +1,138 @@
-main{
-    margin: 10vh 0;
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2vh 0;
+    padding: 4em 0;
 }
 
-.welcome{
-    height: 50vh;
+.welcome {
+    height: 70vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    & .gamewired{
-        font-size: 4.5em;
+    span {
+        font-size: clamp(2.85rem, 5vw + 1rem, 4.5rem);
         font-weight: 800;
         color: var(--bg-Button);
     }
-
-    p{
-        font-size: 1.5em;
-    }
 }
 
-.news{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 110vh;
-}
-
-.games{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 70vh;
-    z-index: 1;
-
-    .carousel{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .carousel-wrapper{
-        display: flex;
-        gap: 2rem;
-        height: auto;
-        width: 100%;
-        scroll-snap-type: none;
-        overflow-x: hidden;
-        padding: 1rem;
-
-    }
-}
-
-.community{
+.news {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 60vh;
+    justify-content: flex-start;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 5em;
 
-    .carousel-community{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
+    .efect {
+        text-align: center;
+        margin: 2vh auto;
+    }
+
+}
+
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 5em;
+
+    h3 {
         margin: 2vh 0;
     }
 
-    .carousel-wrapper-community{
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        height: 60vh;
+        width: 100%;
+        scroll-snap-type: proximity;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0;
+        scrollbar-color: rgb(146, 127, 255) #11ffee00;
+        scrollbar-width: thin;
+    }
+
+}
+
+
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin-bottom: 5em;
+    width: 80%;
+
+    .efect {
+        text-align: center;
+        margin: 2vh auto;
+    }
+
+    .community-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-
+        gap: 4em;
     }
 }
 
-.developers{
+.developers {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 70vh;
-
-    .card__dev{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 20px;
-        width: 70%;
-        height: 500px;
-        background: var(--bg-Card);
-
-
-        .dev-text{
-            span{
-                color: var(--bg-Button);
-                font-size: 3em;
-                font-weight: 700;
-            }
-
-            p{
-                font-size: 1em ;
-            }
-        }
-
-        .dev-creators{
-            display: flex;
-            flex-direction: column;
-
-            .dev{
-                text-align: center;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 5em;
-                background: var(--bg-Button);
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .welcome{
-        height: 70vh;
-    }
-
-    .community{
-        .carousel-community{
-            width: 85%;
-        }
-    }
-
-    .developers{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-
-        .card__dev{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 20px;
-            width: 85%;
-            height: 500px;
-            background: var(--bg-Card);
-
-
-            .dev-text{
-                span{
-                    color: var(--bg-Button);
-                    font-size: 3em;
-                    font-weight: 700;
-                }
-
-                p{
-                    font-size: 1em ;
-                }
-            }
-
-            .dev-creators{
-                display: flex;
-                flex-direction: column;
-
-                .dev{
-                    text-align: center;
-                    border-radius: 8px;
-                    margin: 1.5vh 0;
-                    padding: 0.6em 5em;
-                    background: var(--bg-Button);
-                }
-            }
-        }
-    }
-
+    justify-content: flex-start;
+    height: 100%;
+    margin-bottom: 5em;
+    width: 80%;
 }
 
 @media screen and (max-width: 1024px) {
-    .welcome{
-        height: 90vh;
-
-        .gamewired{
-            font-size: 3.5em;
-
-        }
-    }
-
-    .news{
-        text-align: center;
-        height: 90%;
-    }
-
-    .games{
+    .news {
         height: 100%;
-
-        .carousel-wrapper{
-            display: flex;
-            gap: 2rem;
-            height: auto;
-            scroll-snap-type: x mandatory;
-            overflow-x: scroll;
-            padding: 1rem;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
+        margin-bottom: 5vh;
     }
 
-    .community{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        .carousel-community{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+    .games {
+        .carousel {
             width: 80%;
 
+            .carousel-wrapper {
+                display: flex;
+                align-items: center;
+            }
         }
+    }
 
-        .carousel-wrapper-community{
-            scroll-snap-align: center;
+    .community {
+        width: 100%;
+
+        .community-wrapper {
             flex: 0 0 100%;
             display: flex;
-            gap: 2em;
+            gap: 1.5em;
             height: auto;
             width: 100%;
             scroll-snap-type: x mandatory;
@@ -239,173 +140,37 @@ main{
             padding: 1rem;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-        }
-
-
-    }
-
-    .developers{
-        margin-bottom: 5vh;
-        height: 120%;
-
-        .card__dev{
-            text-align: center;
-            width: 80%;
-            flex-direction: column;
-            height: 630px;
-
-            .dev-text{
-
-                span{
-                    color: var(--bg-Button);
-                    font-size: 3em;
-
-                }
-
-            }
-
-        .dev-creators{
-           .dev{
-                text-align: center;
-                text-wrap: nowrap;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 10em;
-                background: var(--bg-Button);
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .welcome{
-        height: 90vh;
-
-        .gamewired{
-            font-size: 3.5em;
-
-        }
-    }
-
-    .news{
-        text-align: center;
-        height: 90%;
-    }
-
-    .games{
-        height: 100%;
-
-        .carousel-wrapper{
-            display: flex;
-            gap: 2rem;
-            height: auto;
-            scroll-snap-type: x mandatory;
-            overflow-x: scroll;
-            padding: 1rem;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-    }
-
-    .community{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        .carousel-community{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 80%;
-
-        }
-
-        .carousel-wrapper-community{
-            scroll-snap-align: center;
-            flex: 0 0 100%;
-            display: flex;
-            gap: 2em;
-            height: auto;
-            width: 100%;
-            scroll-snap-type: x mandatory;
-            overflow-x: scroll;
-            padding: 1rem;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-
-
-    }
-
-    .developers{
-        margin-bottom: 5vh;
-        height: 120%;
-
-        .card__dev{
-            text-align: center;
-            width: 80%;
-            flex-direction: column;
-            height: 600px;
-
-            .dev-text{
-
-                span{
-                    color: var(--bg-Button);
-                    font-size: 3em;
-
-                }
-
-            }
-
-        .dev-creators{
-           .dev{
-                text-align: center;
-                text-wrap: nowrap;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 10em;
-                background: var(--bg-Button);
-                }
-            }
         }
     }
 }
 
 @media screen and (max-width: 640px) {
-     .welcome{
-        height: 90vh;
-        text-align: center;
+
+
+    .news {
+        height: 100%;
+        width: 90%;
+        margin-bottom: 5vh;
     }
 
-    .news{
-        h2{
-            width: 90%;
+    .games {
+        .carousel {
+            width: 80%;
+
+            .carousel-wrapper {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+            }
         }
     }
 
-    .community{
-        text-align: center;
-        height: 120%;
-
-        .carousel-community{
-             display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-
-        }
-
-        .carousel-wrapper-community{
+    .community {
+        .community-wrapper {
             flex: 0 0 100%;
             display: flex;
-            gap: 2em;
+            gap: 4em;
             height: auto;
             width: 100%;
             scroll-snap-type: x mandatory;
@@ -416,183 +181,4 @@ main{
         }
     }
 
-    .developers{
-        margin-bottom: 5vh;
-        height: 120%;
-
-        .card__dev{
-            text-align: center;
-            width: 80%;
-            flex-direction: column;
-            height: auto;
-            padding: 1em;
-
-            .dev-text{
-
-                span{
-                    color: var(--bg-Button);
-                    font-size: 2em;
-
-                }
-
-            }
-
-        .dev-creators{
-           .dev{
-                text-align: center;
-                text-wrap: nowrap;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 3.5em;
-                background: var(--bg-Button);
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    .welcome{
-        height: 90vh;
-        text-align: center;
-    }
-
-    .news{
-        h2{
-            width: 90%;
-        }
-    }
-
-    .community{
-        text-align: center;
-        height: 120%;
-
-        .carousel-community{
-             display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-
-        }
-
-        .carousel-wrapper-community{
-            flex: 0 0 100%;
-            display: flex;
-            gap: 2em;
-            height: auto;
-            width: 100%;
-            scroll-snap-type: x mandatory;
-            overflow-x: scroll;
-            padding: 1rem;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-    }
-
-    .developers{
-        margin-bottom: 5vh;
-        height: 120%;
-
-        .card__dev{
-            text-align: center;
-            width: 80%;
-            flex-direction: column;
-            height: 530px;
-            .dev-text{
-
-                span{
-                    color: var(--bg-Button);
-                    font-size: 2em;
-
-                }
-
-            }
-
-        .dev-creators{
-           .dev{
-                text-align: center;
-                text-wrap: nowrap;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 2.75em;
-                background: var(--bg-Button);
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .welcome{
-        height: 90vh;
-    }
-
-    .news{
-        h2{
-            width: 90%;
-        }
-    }
-
-    .community{
-        text-align: center;
-        height: 120%;
-
-        .carousel-community{
-             display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-
-        }
-
-        .carousel-wrapper-community{
-            flex: 0 0 100%;
-            display: flex;
-            gap: 2em;
-            height: auto;
-            width: 100%;
-            scroll-snap-type: x mandatory;
-            overflow-x: scroll;
-            padding: 1rem;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-    }
-
-    .developers{
-        margin-bottom: 5vh;
-        height: 120%;
-
-        .card__dev{
-            text-align: center;
-            width: 80%;
-            flex-direction: column;
-            height: 540px;
-            .dev-text{
-
-                span{
-                    color: var(--bg-Button);
-                    font-size: 2em;
-
-                }
-
-            }
-
-        .dev-creators{
-           .dev{
-                text-align: center;
-                text-wrap: nowrap;
-                border-radius: 8px;
-                margin: 1.5vh 0;
-                padding: 0.6em 2.75em;
-                background: var(--bg-Button);
-                }
-            }
-        }
-    }
 }

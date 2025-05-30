@@ -3,432 +3,536 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="GameWired, o canal mais completo com notícias do mundo gamer!"
-    />
 
     <link
       rel="icon"
       sizes="16x16 32x32 48x48"
       type="image/png"
-      href="/src/images/Logo.svg"
+      href="/src/imgs/Logo.svg"
     />
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/index.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
 
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+
+    <link rel="stylesheet" href="/index.css" />
 
     <title>GameWired</title>
   </head>
+
   <body>
     <div class="eclipse"></div>
 
-    <header>
-        <nav>
-            <div class="nav__logo">
-                <img
-                    src="/src/images/Logo.svg" alt="Logo-GameWired"
-                    />
-            </div>
-
-            <div class="nav__center">
-                <a href="/assets/pages/noticias/news.html" class="abas">
-                    Notícias
-                </a>
-                <a href="" class="abas">
-                    Plataformas
-                </a>
-                <a href="/assets/pages/comunidade/community.html" class="abas">
-                    Comunidade
-                </a>
-            </div>
-
-            <div class="nav__user">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-                <a href="/assets/pages/login/login.html" class="user__profile">
-                    <i class="bi bi-person-badge"></i>
-                </a>
-            </div>
-
-            <div class="nav__menu">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-
-                <button onclick="openMenu()" class="menu-button">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                </button>
-            </div>
-        </nav>
-
-        <div class="nav__mobile">
-            <a href="/assets/pages/login/login.html" class="user-profile">
-                <i class="bi bi-person-badge"></i>
-            </a>
-
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
-                Notícias
-            </a>
-            <a href="" class="abas-mobile">
-                Plataformas
-            </a>
-            <a href="/assets/pages/comunidade/community.html" class="abas-mobile">
-                Comunidade
-            </a>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="nav__logo">
+          <a href="#home">
+            <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+          </a>
         </div>
+
+        <ul class="nav__center">
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
+          </li>
+          <li>
+            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
+              >Plataformas</a
+            >
+          </li>
+          <li>
+            <a href="/assets/pages/comunidade/community.html" class="abas"
+              >Comunidade</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav__user">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <a href="/assets/pages/registros/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <button
+            class="nav__menu-button"
+            aria-label="Abrir menu de navegação"
+            onclick="openMenu()"
+          >
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav__mobile">
+        <a href="/assets/pages/registros/register.html">
+          <i class="bi bi-person-badge"></i>
+        </a>
+
+        <ul>
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+              Notícias
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/plataformas/plataformas.html"
+              class="abas-mobile"
+            >
+              Plataformas
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/comunidade/community.html"
+              class="abas-mobile"
+            >
+              Comunidade
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main id="home">
-        <section class="welcome">
-            <div>
-                <h1>
-                    Bem-vindo ao
-                </h1>
+      <section class="welcome">
+        <h1>Bem-vindo ao</h1>
 
-                <span class="gamewired">
-                    GameWired
-                </span>
+        <span> GameWired </span>
 
-                <p>
-                    Seu canal principal de notícias!
-                </p>
-            </div>
-        </section>
-
-        <section class="news">
-            <h2>
-                Fique por dentro das notícias
-            </h2>
-
-            <div class="container">
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Mario.webp"
-                            alt="Mario-Kart-World" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
-
-                        <h4>
-                            Mario Kart World foi originalmente planejado para o 1˚ Switch
-                        </h4>
-
-                        <p>
-                            Kenta Sato, diretor de programação do jogo, revelou que o principal lançamento do novo Switch era originalmente planejado para o Switch 1.
-                        </p>
-
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Fortnite.webp"
-                            alt="Fortnite na Apple" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
-
-                        <h4>
-                            Fortnite retorna para a App Store americana após 4 anos.
-                        </h4>
-
-                        <p>
-                            Após 4 anos, Fortnite retorna a AppStore americana nesta terça-feira (20) após uma longa batalha judicial entre Epic Games e Apple.
-                        </p>
-
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Rayman.webp"
-                            alt="Persona-Rayman" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
-
-                        <h4>
-                            Ubisoft em busca de desenvolvedores para um novo Rayman?!
-                        </h4>
-
-                        <p>
-                            Usuários da plataforma Reddit descobrem ofertas de emprego para a "produção de um prestigioso título AAA para a franquia Rayman" na Ubisoft Milan após postagem realizadas pela empresa.
-                        </p>
-
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="games">
-            <h2>
-                Mais Jogados
-            </h2>
-
-            <div class="carousel">
-                <div class="carousel-wrapper">
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-
-                    <article class="card__game">
-
-                    </article>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section class="community">
-            <h2>
-                Participe da nossa comunidade
-            </h2>
-
-                <div class="carousel-community">
-                    <div class="carousel-wrapper-community">
-                        <article class="card__community">
-                            <div class="card-user">
-                                <img src="/src/images/comunidade/users/users3.webp" alt="Profile-photo">
-                                <h3>User</h3>
-                            </div>
-
-                            <div class="card-description">
-                                <h4>
-                                    Assunto
-                                </h4>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde velit cum possimus quasi rerum corporis dignissimos officiis iste labore alias? Id beatae porro ducimus officia voluptate, accusantium voluptas quia sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam veritatis, non iure delectus beatae facere nobis id eaque voluptate quisquam ab praesentium, laborum nihil? Odio id quia quidem. Dicta, harum.
-                                </p>
-
-                                <div class="card-interact">
-                                    <button>
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-chat-dots"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-send"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-
-                          <article class="card__community">
-                            <div class="card-user">
-                                <img src="/src/images/comunidade/users/users2.webp" alt="Profile-photo">
-                                <h3>User</h3>
-                            </div>
-
-                            <div class="card-description">
-                                <h4>
-                                    Assunto
-                                </h4>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde velit cum possimus quasi rerum corporis dignissimos officiis iste labore alias? Id beatae porro ducimus officia voluptate, accusantium voluptas quia sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam veritatis, non iure delectus beatae facere nobis id eaque voluptate quisquam ab praesentium, laborum nihil? Odio id quia quidem. Dicta, harum.
-                                </p>
-
-                                <div class="card-interact">
-                                    <button>
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-chat-dots"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-send"></i>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </article>
-
-                          <article class="card__community">
-                            <div class="card-user">
-                                <img src="/src/images/comunidade/users/users1.webp" alt="Profile-photo">
-                                <h4>User</h4>
-                            </div>
-
-                            <div class="card-description">
-                                <h4>
-                                    Assunto
-                                </h4>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde velit cum possimus quasi rerum corporis dignissimos officiis iste labore alias? Id beatae porro ducimus officia voluptate, accusantium voluptas quia sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam veritatis, non iure delectus beatae facere nobis id eaque voluptate quisquam ab praesentium, laborum nihil? Odio id quia quidem. Dicta, harum.
-                                </p>
-
-                                <div class="card-interact">
-                                    <button>
-                                        <i class="bi bi-heart"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-chat-dots"></i>
-                                    </button>
-
-                                    <button>
-                                        <i class="bi bi-send"></i>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-        </section>
-    </main>
-
-    <aside class="developers">
-        <article class="card__dev">
-            <div class="dev-text">
-                <h2>
-                    Conheça os nossos
-                </h2>
-
-                <span>
-                    Desenvolvedores
-                </span>
-
-                <p>
-                    Saíba quem participou no desenvilvmento do GameWired.
-                </p>
-            </div>
-
-            <div class="dev-creators">
-                <a href="" class="dev">
-                    Guilherme Bianchini
-                </a>
-                <a href="" class="dev">
-                    Julia Oliveira
-                </a>
-                <a href="" class="dev">
-                    Luiz Jeronimo
-                </a>
-                <a href="" class="dev">
-                    Pedro Henrique
-                </a>
-                <a href="" class="dev">
-                    Pedro Melquiades
-                </a>
-            </div>
-        </article>
-    </aside>
-
-    <footer>
-      <section class="header">
-          <h3>GameWired</h3>
-          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
+        <p>Seu canal principal de notícias!</p>
       </section>
 
-      <span>Projeto facultativo</span>
+      <section class="news">
+        <h2>Fique por dentro das notícias</h2>
 
-      <section class="info">
+        <p class="efect">
+          Tudo sobre jogos, notícias e lançamentos em um só lugar!
+        </p>
+
+        <div class="container-cards">
+          <article class="card-news">
+            <div class="img-card">
+              <img src="/src/imgs/noticias/Mario.webp" alt="Mario Kart World" />
+            </div>
+            <div class="txt-card">
+              <span class="date"> 21/05/2025 </span>
+
+              <h4>Mario Kart foi originalmente planejado para o 1˚ Switch.</h4>
+
+              <p>
+                Kenta Sato, diretor de programação do jogo, revelou que o
+                principal lançamento do novo Switch era originalmente planejado
+                para o Switch 1.
+              </p>
+
+              <a
+                href="/assets/pages/noticias/notices/noticia-03.html"
+                class="link-card"
+              >
+                Leia mais
+              </a>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="img-card">
+              <img
+                src="/src/imgs/noticias/Fortnite.webp"
+                alt="Fortnite na AppleStore"
+              />
+            </div>
+            <div class="txt-card">
+              <span class="date"> 21/05/2025 </span>
+
+              <h4>Fortnite retorna para a App Store americana após 4 anos.</h4>
+
+              <p>
+                Após 4 anos, Fortnite retorna a AppStore americana nesta
+                terça-feira (20) após uma longa batalha judicial entre Epic
+                Games e Apple.
+              </p>
+
+              <a
+                href="/assets/pages/noticias/notices/noticia-04.html"
+                class="link-card"
+              >
+                Leia mais
+              </a>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="img-card">
+              <img src="/src/imgs/noticias/Rayman.webp" alt="Rayman" />
+            </div>
+            <div class="txt-card">
+              <span class="date"> 21/05/2025 </span>
+
+              <h4>Ubisoft em busca de desenvolvedores para um novo Rayman?!</h4>
+
+              <p>
+                Usuários da plataforma Reddit descobrem ofertas de emprego para
+                a "produção de um prestigioso título AAA para a franquia Rayman"
+                na Ubisoft Milan após postagem realizadas pela empresa.
+              </p>
+
+              <a
+                href="/assets/pages/noticias/notices/noticia-05.html"
+                class="link-card"
+              >
+                Leia mais
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="games">
+        <h3>Mais Jogados</h3>
+
+        <div class="carousel">
+          <div class="carousel-wrapper">
+            <article class="card__game">
+              <img
+                src="/src/imgs/games/CounterStrike.webp"
+                alt="CounterStrike 2"
+              />
+              <p>Counter Strike 2</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/Overwatch2.webp" alt="Overwatch 2" />
+              <p>Overwatch 2</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/Dota2.webp" alt="Dota 2" />
+              <p>Dota 2</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/Fortnite.webp" alt="Fortnite" />
+              <p>Fortnite</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/GTAV.webp" alt="Grand Theft Auto V" />
+              <p>Grand Theft Auto V</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/LoL.webp" alt="League of Legends" />
+              <p>League of Legends</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/Rematch.webp" alt="Rematch" />
+              <p>Rematch</p>
+            </article>
+
+            <article class="card__game">
+              <img src="/src/imgs/games/Vava.webp" alt="Valorant" />
+              <p>Valorant</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="community">
+        <h2>Participe da nossa comunidade</h2>
+        <p class="efect">
+          Prepare-se para encontrar amigos, rivais e parceiros de time que irão
+          te levar ao próximo nível!
+        </p>
+
+        <div class="container-community">
+          <div class="community-wrapper">
+            <article class="card-community">
+              <div class="community-user">
+                <img
+                  src="/src/imgs/comunidade/users/users1.webp"
+                  alt="Profile-photo"
+                />
+                <h4>user</h4>
+              </div>
+
+              <div class="txt-community">
+                <span> Assunto </span>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Libero voluptatum suscipit odit laboriosam dolores, atque
+                  commodi quae sint hic eaque non, culpa quod ipsa assumenda
+                  velit, nemo repudiandae. Sint, id.
+                </p>
+
+                <div class="actions">
+                  <button>
+                    <i class="ph ph-hand-heart"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-chat-teardrop-text"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-share-fat"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-community">
+              <div class="community-user">
+                <img
+                  src="/src/imgs/comunidade/users/users10.webp"
+                  alt="Profile-photo"
+                />
+                <h4>user</h4>
+              </div>
+
+              <div class="txt-community">
+                <span> Assunto </span>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Libero voluptatum suscipit odit laboriosam dolores, atque
+                  commodi quae sint hic eaque non, culpa quod ipsa assumenda
+                  velit, nemo repudiandae. Sint, id.
+                </p>
+
+                <div class="actions">
+                  <button>
+                    <i class="ph ph-hand-heart"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-chat-teardrop-text"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-share-fat"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-community">
+              <div class="community-user">
+                <img
+                  src="/src/imgs/comunidade/users/users5.webp"
+                  alt="Profile-photo"
+                />
+                <h4>user</h4>
+              </div>
+
+              <div class="txt-community">
+                <span> Assunto </span>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Libero voluptatum suscipit odit laboriosam dolores, atque
+                  commodi quae sint hic eaque non, culpa quod ipsa assumenda
+                  velit, nemo repudiandae. Sint, id.
+                </p>
+
+                <div class="actions">
+                  <button>
+                    <i class="ph ph-hand-heart"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-chat-teardrop-text"></i>
+                  </button>
+
+                  <button>
+                    <i class="ph ph-share-fat"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="developers">
+        <aside class="card__dev">
+          <div class="txt__dev">
+            <h3>Conheça os nossos</h3>
+
+            <span> Desenvolvedores </span>
+
+            <p>Saíba quem participou no desenvilvmento do GameWired.</p>
+          </div>
+
+          <div class="devs">
+            <button class="devs">Luiz Jeronimo</button>
+
+            <div class="modal">
+              <div class="profile">
+                <div class="user-icon">
+                  <img src="" alt="" />
+                </div>
+                <p class="user-name">Luiz Jeronimo</p>
+                <p class="id">Gerente de Projetos</p>
+
+                <button class="exit">
+                  <i class="ph ph-x"></i>
+                </button>
+              </div>
+
+              <div class="Description"></div>
+
+              <div class="social-media"></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-head">
+        <span>GameWired</span>
+        <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+      </div>
+
+      <div class="description">
+        <p>Projeto de Extensão.</p>
+      </div>
+
+      <div class="infos">
         <div class="about">
-          <p>Projeto</p>
+          <p>Sobre:</p>
 
-          <a href="" class="link"> Sobre </a>
-          <a href="" class="link"> Marca </a>
-          <a href="" class="link">Suporte</a>
+          <ul>
+            <li>
+              <a href="">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="">Contato</a>
+            </li>
+
+            <li>
+              <a href="">Suporte</a>
+            </li>
+
+            <li>
+              <a href="">FAQ</a>
+            </li>
+
+            <li>
+              <a href="">Identidade</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="navigation">
-          <p>Navegação</p>
+        <div class="sections">
+          <p>Navegação:</p>
 
-          <a href="#home" class="link"> Home </a>
-          <a href="assets/pages/noticias/news.html" class="link"> Notícias </a>
-          <a href="" class="link">
-            Plataformas
-          </a>
-          <a href="/assets/pages/comunidade/community.html" class="link">
-            Comunidade
-          </a>
-          <a href="/assets/pages/login/login.html" class="link">
-            Cadastro
-          </a>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
 
-          <a href="" class="link"> Login </a>
+            <li>
+              <a href="/assets/pages/noticias/news.html"> Notícias </a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/plataformas/plataformas.html"
+                >Plataformas</a
+              >
+            </li>
+
+            <li>
+              <a href="/assets/pages/comunidade/community.html">Comunidade</a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/registros/register.html">Cadastre-se</a>
+            </li>
+          </ul>
         </div>
 
         <div class="social">
-          <p>Social</p>
+          <p>Social:</p>
 
-          <a href="" class="link">
-            <i class="bi bi-instagram"> Instagram</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-github"> GitHub</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-twitter-x"> Twiter X</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-pinterest"> Pinterest</i>
-          </a>
+          <ul>
+            <li>
+              <a href="">
+                <i class="ph ph-instagram-logo"></i>
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-x-logo"></i>
+                Twitter X
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-dev-to-logo"></i>
+                Dev
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-github-logo"></i>
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <a href=""
+                ><i class="ph ph-discord-logo"></i>
+                Discord
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <div class="direitos">
+        <p>© 2024 GameWired. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-
-
-    <script src="/assets/scripts/themes.js"></script>
-    <script src="/assets/scripts/_navMobile.js"></script>
-
-</body>
+    <script src="/assets/scripts/_temas.js"></script>
+    <script src="/assets/scripts/_navBar.js"></script>
+    <script src="/assets/scripts/_modal.js"></script>
+  </body>
 </html>

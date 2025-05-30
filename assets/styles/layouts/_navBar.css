@@ -1,0 +1,177 @@
+.main-header {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    z-index: 100;
+}
+
+.main-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5em;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    .nav__logo {
+        object-fit: cover;
+        display: block;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .nav__center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        gap: 6em;
+
+        .abas {
+            position: relative;
+
+            &:hover {
+                color: var(--bg-Button);
+                transition: .4s;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: var(--bg-Button);
+                transition: width 0.4s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+                background: var(--bg-Button);
+                transition: width 0.4s ease-in-out;
+            }
+        }
+    }
+
+    .nav__user {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        gap: 2em;
+    }
+
+    .ph-moon-stars, .ph-sun-dim {
+        font-size: 2rem;
+        color: var(--bg-Font);
+        transition: 0.3s;
+    }
+
+    .bi-person-badge {
+        font-size: 2rem;
+    }
+
+    .ph-moon-stars, .ph-sun-dim, .bi-person-badge {
+        &:hover {
+            text-shadow: 0 0 8px var(--bg-Button);
+        }
+    }
+
+    .nav__menu {
+        display: none;
+
+        .nav__menu-button {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 5px;
+            transition-duration: .3s;
+
+            .bar {
+                background: var(--bg-Font);
+                width: 100%;
+                height: 4px;
+                border-radius: 5px;
+                transition-duration: .3s;
+            }
+
+            .bar1 {
+                width: 35px;
+
+            }
+
+            .bar2 {
+                width: 25px;
+
+            }
+
+            .bar3 {
+                width: 10px;
+            }
+        }
+    }
+
+}
+
+.nav__mobile {
+    display: none;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .main-nav {
+        gap: 0 3em;
+        padding: 0 2.5em;
+
+        .nav__center,
+        .nav__user {
+            display: none;
+        }
+
+        .nav__menu {
+            display: flex;
+            gap: 0 0.6em;
+
+            .theme {
+                touch-action: manipulation;
+            }
+        }
+    }
+
+    .nav__mobile.active {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 5em;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        right: 0;
+        padding: 1.5rem;
+
+        .bi-person-badge {
+            font-size: 2rem;
+        }
+
+        .abas-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.75rem 0;
+        }
+    }
+}

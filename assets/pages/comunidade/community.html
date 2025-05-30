@@ -3,94 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="GameWired, o canal mais completo com notícias do mundo gamer!"
-    />
 
     <link
       rel="icon"
       sizes="16x16 32x32 48x48"
       type="image/png"
-      href="/src/images/Logo.svg"
+      href="/src/imgs/Logo.svg"
     />
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/pages/comunidade/community.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
 
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+
+    <link rel="stylesheet" href="/assets/pages/comunidade/community.css" />
 
     <title>GameWired | Comunidade</title>
   </head>
+
   <body>
     <div class="eclipse"></div>
-    <header>
-        <nav>
-            <div class="nav__logo">
-              <a href="/index.html">
-                <img
-                  src="/src/images/Logo.svg"
-                  alt="Logo-GameWired"
-                  />
-              </a>
-            </div>
 
-            <div class="nav__center">
-                <a href="/assets/pages/noticias/news.html" class="abas">
-                    Notícias
-                </a>
-                <a href="" class="abas">
-                    Plataformas
-                </a>
-                <a href="#community" class="abas">
-                    Comunidade
-                </a>
-            </div>
-
-            <div class="nav__user">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-                <a href="/assets/pages/login/login.html" class="user__profile">
-                    <i class="bi bi-person-badge"></i>
-                </a>
-            </div>
-
-            <div class="nav__menu">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-
-                <button onclick="openMenu()" class="menu-button">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                </button>
-            </div>
-        </nav>
-
-        <div class="nav__mobile">
-            <a href="/assets/pages/login/login.html" class="user-profile">
-                <i class="bi bi-person-badge"></i>
-            </a>
-
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
-                Notícias
-            </a>
-            <a href="" class="abas-mobile">
-                Plataformas
-            </a>
-            <a href="#community" class="abas-mobile">
-                Comunidade
-            </a>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="nav__logo">
+          <a href="/index.html">
+            <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+          </a>
         </div>
+
+        <ul class="nav__center">
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
+          </li>
+          <li>
+            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
+              >Plataformas</a
+            >
+          </li>
+          <li>
+            <a href="/assets/pages/comunidade/community.html" class="abas"
+              >Comunidade</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav__user">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <a href="/assets/pages/registros/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <button
+            class="nav__menu-button"
+            aria-label="Abrir menu de navegação"
+            onclick="openMenu()"
+          >
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav__mobile">
+        <a href="/assets/pages/registros/register.html">
+          <i class="bi bi-person-badge"></i>
+        </a>
+
+        <ul>
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+              Notícias
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/plataformas/plataformas.html"
+              class="abas-mobile"
+            >
+              Plataformas
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/comunidade/community.html"
+              class="abas-mobile"
+            >
+              Comunidade
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main id="community">
@@ -98,17 +127,17 @@
         <aside class="left">
           <div class="profile">
             <div class="user">
-                <img src="/src/images/comunidade/users/users5.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users1.webp"
+                alt="Profile-photo-user"
+              />
 
-                <h4>Name</h4>
+              <h4>Name</h4>
 
-
-                <a href="">
-                  <i class="bi bi-gear"></i>
-                </a>
-
+              <a href="">
+                <i class="bi bi-gear"></i>
+              </a>
             </div>
-
 
             <label for="create-post" class="btn-post">Criar Publicação</label>
           </div>
@@ -117,47 +146,62 @@
             <h3>Grupos</h3>
 
             <a href="" class="side-item">
-              <img src="/src/images/comunidade/groups/vava.webp" alt="Valorant-Group">
+              <img
+                src="/src/imgs/comunidade/groups/vava.webp"
+                alt="Valorant-Group"
+              />
               <p>Valorant</p>
             </a>
             <a href="" class="side-item">
-              <img src="/src/images/comunidade/groups/CSGO.webp" alt="Counter-Strike-Group">
+              <img
+                src="/src/imgs/games/CounterStrike.webp"
+                alt="Counter-Strike-Group"
+              />
               <p>CS:GO</p>
             </a>
             <a href="" class="side-item">
-              <img src="/src/images/comunidade/groups/Lol.webp" alt="LoL-Group">
+              <img src="/src/imgs/comunidade/groups/Lol.webp" alt="LoL-Group" />
               <p>League of Legends</p>
             </a>
             <a href="" class="side-item">
-              <img src="/src/images/comunidade/groups/Dota2.webp" alt="Dota2-Group">
+              <img
+                src="/src/imgs/comunidade/groups/Dota2.webp"
+                alt="Dota2-Group"
+              />
               <p>Dota2</p>
             </a>
           </div>
-
-          <div></div>
         </aside>
 
         <section class="middle">
           <form action="" class="create-post">
             <div class="profile-photo">
-              <img src="/src/images/comunidade/users/users5.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users1.webp"
+                alt="Profile-photo-user"
+              />
             </div>
 
-            <input type="text" placeholder="Quais as novidades?" id="create-post">
-            <input type="submit" value="Publicar" class="btn-post">
+            <input
+              type="text"
+              placeholder="Quais as novidades?"
+              id="create-post"
+            />
+            <input type="submit" value="Publicar" class="btn-post" />
           </form>
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users10.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users10.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -189,15 +233,15 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users4.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users3.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-
+              <p>legenda</p>
 
               <div class="action-button">
                 <div class="intection">
@@ -229,15 +273,16 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users7.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users12.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -269,15 +314,16 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users8.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users15.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -309,15 +355,16 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users6.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users7.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -349,15 +396,16 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users1.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users9.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -389,15 +437,16 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users3.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users4.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-              <img src="" alt="">
+              <p>legenda</p>
+              <img src="" alt="" />
 
               <div class="action-button">
                 <div class="intection">
@@ -429,15 +478,12 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users9.webp" alt="">
+              <img src="/src/imgs/comunidade/users/users2.webp" alt="" />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
-
+              <p>legenda</p>
 
               <div class="action-button">
                 <div class="intection">
@@ -469,14 +515,15 @@
 
           <article class="pubs">
             <div class="profile-user">
-              <img src="/src/images/comunidade/users/users2.webp" alt="Profile-photo-user">
+              <img
+                src="/src/imgs/comunidade/users/users11.webp"
+                alt="Profile-photo-user"
+              />
               <h4>username</h4>
             </div>
 
             <div class="info-pub">
-              <p>
-                legenda
-              </p>
+              <p>legenda</p>
 
               <div class="action-button">
                 <div class="intection">
@@ -505,112 +552,177 @@
               </div>
             </div>
           </article>
-
         </section>
 
         <aside class="right">
           <div class="recommendation">
             <h3>Recomendações</h3>
 
-
-              <div class="friend">
-                <div class="profile-friend">
-                  <img src="/src/images/comunidade/users/users15.webp" alt="Profile-photo-user">
-                  <h4>username</h4>
-                </div>
-
-                <div class="add">
-                  <button>
-                    <i class="bi bi-person-add"></i>
-                  </button>
-                </div>
+            <div class="friend">
+              <div class="profile-friend">
+                <img
+                  src="/src/imgs/comunidade/users/users14.webp"
+                  alt="Profile-photo-user"
+                />
+                <h4>username</h4>
               </div>
 
-              <div class="friend">
-                <div class="profile-friend">
-                  <img src="/src/images/comunidade/users/users13.webp" alt="Profile-photo-user">
-                  <h4>username</h4>
-                </div>
+              <div class="add">
+                <button>
+                  <i class="bi bi-person-add"></i>
+                </button>
+              </div>
+            </div>
 
-                <div class="add">
-                  <button>
-                    <i class="bi bi-person-add"></i>
-                  </button>
-                </div>
+            <div class="friend">
+              <div class="profile-friend">
+                <img
+                  src="/src/imgs/comunidade/users/users4.webp"
+                  alt="Profile-photo-user"
+                />
+                <h4>username</h4>
               </div>
 
-              <div class="friend">
-                <div class="profile-friend">
-                  <img src="/src/images/comunidade/users/users14.webp" alt="Profile-photo-user">
-                  <h4>username</h4>
-                </div>
+              <div class="add">
+                <button>
+                  <i class="bi bi-person-add"></i>
+                </button>
+              </div>
+            </div>
 
-                <div class="add">
-                  <button>
-                    <i class="bi bi-person-add"></i>
-                  </button>
-                </div>
+            <div class="friend">
+              <div class="profile-friend">
+                <img
+                  src="/src/imgs/comunidade/users/users13.webp"
+                  alt="Profile-photo-user"
+                />
+                <h4>username</h4>
               </div>
 
+              <div class="add">
+                <button>
+                  <i class="bi bi-person-add"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </aside>
       </section>
     </main>
 
     <footer>
-      <section class="header">
-          <h3>GameWired</h3>
-          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
-      </section>
+      <div class="footer-head">
+        <span>GameWired</span>
+        <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+      </div>
 
-      <span>Projeto facultativo</span>
+      <div class="description">
+        <p>Projeto de Extensão.</p>
+      </div>
 
-      <section class="info">
+      <div class="infos">
         <div class="about">
-          <p>Projeto</p>
+          <p>Sobre:</p>
 
-          <a href="" class="link"> Sobre </a>
-          <a href="" class="link"> Marca </a>
-          <a href="" class="link">Suporte</a>
+          <ul>
+            <li>
+              <a href="">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="">Contato</a>
+            </li>
+
+            <li>
+              <a href="">Suporte</a>
+            </li>
+
+            <li>
+              <a href="">FAQ</a>
+            </li>
+
+            <li>
+              <a href="">Identidade</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="navigation">
-          <p>Navegação</p>
+        <div class="sections">
+          <p>Navegação:</p>
 
-          <a href="/index.html" class="link"> Home </a>
-          <a href="assets/pages/noticias/news.html" class="link"> Notícias </a>
-          <a href="" class="link">
-            Plataformas
-          </a>
-          <a href="#community" class="link">
-            Comunidade
-          </a>
-          <a href="/assets/pages/login/login.html" class="link">
-            Cadastro
-          </a>
-          <a href="" class="link"> Login </a>
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/noticias/news.html"> Notícias </a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/plataformas/plataformas.html"
+                >Plataformas</a
+              >
+            </li>
+
+            <li>
+              <a href="#community">Comunidade</a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/registros/register.html">Cadastre-se</a>
+            </li>
+          </ul>
         </div>
 
         <div class="social">
-          <p>Social</p>
+          <p>Social:</p>
 
-          <a href="" class="link">
-            <i class="bi bi-instagram"> Instagram</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-github"> GitHub</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-twitter-x"> Twiter X</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-pinterest"> Pinterest</i>
-          </a>
+          <ul>
+            <li>
+              <a href="">
+                <i class="ph ph-instagram-logo"></i>
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-x-logo"></i>
+                Twitter X
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-dev-to-logo"></i>
+                Dev
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-github-logo"></i>
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <a href=""
+                ><i class="ph ph-discord-logo"></i>
+                Discord
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <div class="direitos">
+        <p>© 2024 GameWired. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-    <script src="/assets/scripts/themes.js"></script>
-    <script src="/assets/scripts/_navMobile.js"></script>
+    <script src="/assets/scripts/_navBar.js"></script>
+    <script src="/assets/scripts/_temas.js"></script>
   </body>
 </html>

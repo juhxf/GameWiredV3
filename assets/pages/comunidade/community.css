@@ -1,14 +1,19 @@
-main{
+#community{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     position: relative;
     top: 5.4em;
-    margin-bottom: 10vh;
-
+    margin-bottom: 5em;
+    padding: 0 5em;
 }
 
 .container__community{
-    display: grid;
-    grid-template-columns: 20vw 40vw 18vw;
-    gap: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
     position: relative;
     z-index: -1;
 
@@ -18,6 +23,7 @@ main{
         position: sticky;
         top: 5.4em;
         margin-left: 1vw;
+        width: 25vw;
 
         .profile{
             display: flex;
@@ -86,6 +92,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 50vw;
 
 
 
@@ -101,8 +108,8 @@ main{
 
             .profile-photo{
                 img{
-                    height: 35px;
-                    width: 35px;
+                    height: 40px;
+                    width: 50px;
                     border-radius: 100%;
                 }
             }
@@ -163,12 +170,14 @@ main{
                     justify-content: space-between;
                     width: 100%;
 
-                    .bi{
+                    i{
                         font-size: 1.25em;
                         padding: 0 1em;
+                        color: var(--bg-Font);
 
                         &:hover{
                             color: var(--bg-Button);
+                            transition: 0.3s;
                         }
                     }
 
@@ -182,6 +191,7 @@ main{
         position: sticky;
         top: 5.4em;
         margin-left: 1vw;
+        width: 20vw;
 
         .recommendation{
             display: flex;
@@ -194,14 +204,13 @@ main{
 
                 .friend{
                     display: flex;
+                    align-items: center;
                     justify-content: space-between;
                     padding: 0.4em 0.6em;
                     margin: 1vh 0;
-                    width: 90%;
+                    width: 100%;
                     border-radius: 100px;
                     border: 1.05px solid var(--bg-Eclipse);
-
-
 
                     .profile-friend{
                         display: flex;
@@ -211,11 +220,9 @@ main{
                             height: 30px;
                             width: 30px;
                             border-radius: 100%;
+                            margin-right: 0.5vw;
                         }
 
-                        p{
-                            margin: 0 0.5vw;
-                        }
                     }
 
                     .add{
@@ -225,72 +232,39 @@ main{
                             width: 30px;
                             border-radius: 100% ;
 
-                            .bi{
+                            .bi-person-add{
+                                cursor: pointer;
                                 font-size: 1.125em;
+                                color: var(--bg-Font);
                             }
                         }
                     }
                 }
-
         }
-
     }
-}
-
-@media screen and (max-width: 1280px) {
-    .container__community{
-        width: 96%;
-
-        grid-template-columns: 20vw 50vw 18vw;
-        gap: 5%;
-
-
-    }
-
 }
 
 @media screen and (max-width: 1024px) {
-    .container__community{
-        margin-top: 5vh;
-        grid-template-columns: 30vw auto;
 
-        .right{
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    main{
-        height: 100%;
-        margin-bottom: 20vh;
+    #community{
+        padding: 0;
     }
 
-    .container__community{
-        grid-template-columns: 30vw auto;
-
-
-        .middle{
-            .profile-photo{
-                    img{
-                        display: none;
-                     }
-                }
-        }
-
-
-        .right{
-            display: none;
-        }
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .container__community{
-        grid-template-columns: 20vw auto;
+     .container__community{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
 
         .left{
+            position: relative;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             .profile{
                 display: none;
             }
@@ -299,16 +273,27 @@ main{
             .sidebar{
                 height: 100%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 1em 2.25em;
+                width: 80%;
+                padding: 1.5em;
 
                 h3{
+                    position: absolute;
+                    left: 12%;
+                    top: 20%;
                     font-size: 1em;
                 }
 
                 .side-item{
+                    padding: 0.5em;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        height: 50px;
+                        width: 60px;
+                    }
 
                     p{
                         display: none;
@@ -318,16 +303,11 @@ main{
         }
 
         .middle{
+            width: 80%;
             .create-post{
-                margin-top: 3vh;
-                .profile-photo{
-                    img{
-                        display: none;
-                     }
-                }
 
                 input[type="text"]{
-                    font-size: 0.9em;
+                    font-size: 0.8em;
                     padding-left: 0.6em;
                 }
         }
@@ -349,7 +329,7 @@ main{
                 }
 
                 .action-button{
-                    justify-content: center;
+                    justify-content: space-between;
                     width: 100%;
 
                     .bi{
@@ -368,11 +348,20 @@ main{
     }
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 640px) {
+
     .container__community{
-        grid-template-columns: 20vw auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
 
         .left{
+            position: relative;
+            top: 0;
+
             .profile{
                 display: none;
             }
@@ -381,16 +370,27 @@ main{
             .sidebar{
                 height: 100%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 1em 2.25em;
+                width: 100%;
+                padding: 1em;
 
                 h3{
+                    position: absolute;
+                    left: 5%;
+                    top: 20%;
                     font-size: 1em;
                 }
 
                 .side-item{
+                    padding: 0.5em;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        height: 50px;
+                        width: 60px;
+                    }
 
                     p{
                         display: none;
@@ -400,6 +400,7 @@ main{
         }
 
         .middle{
+            width: 96%;
             .create-post{
 
                 .profile-photo{

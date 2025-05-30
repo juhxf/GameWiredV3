@@ -3,376 +3,482 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="GameWired, o canal mais completo com notícias do mundo gamer!"
-    />
 
     <link
       rel="icon"
       sizes="16x16 32x32 48x48"
       type="image/png"
-      href="/src/images/Logo.svg"
+      href="/src/imgs/Logo.svg"
     />
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+
     <link rel="stylesheet" href="/assets/pages/noticias/news.css" />
 
     <title>GameWired | Notícias</title>
   </head>
+
   <body>
     <div class="eclipse"></div>
 
-   <header>
-        <nav>
-            <div class="nav__logo">
-                <a href="/index.html">
-                    <img
-                        src="/src/images/Logo.svg"
-                        alt="Logo-GameWired"
-                        />
-                </a>
-            </div>
-
-            <div class="nav__center">
-                <a href="/assets/pages/noticias/news.html" class="abas">
-                    Notícias
-                </a>
-                <a href="" class="abas">
-                    Plataformas
-                </a>
-                <a href="/assets/pages/comunidade/community.html" class="abas">
-                    Comunidade
-                </a>
-            </div>
-
-            <div class="nav__user">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-                <a href="/assets/pages/login/login.html" class="user__profile">
-                    <i class="bi bi-person-badge"></i>
-                </a>
-            </div>
-
-            <div class="nav__menu">
-                <button onclick="toggle()" class="theme">
-                    <i class="bi bi-brightness-low"></i>
-                </button>
-
-                <button onclick="openMenu()" class="menu-button">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                </button>
-            </div>
-        </nav>
-
-        <div class="nav__mobile">
-            <a href="/assets/pages/login/login.html" class="user-profile">
-                <i class="bi bi-person-badge"></i>
-            </a>
-
-            <a href="#noticias" class="abas-mobile">
-                Notícias
-            </a>
-            <a href="" class="abas-mobile">
-                Plataformas
-            </a>
-            <a href="/assets/pages/comunidade/community.html" class="abas-mobile">
-                Comunidade
-            </a>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="nav__logo">
+          <a href="/index.html">
+            <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+          </a>
         </div>
+
+        <ul class="nav__center">
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
+          </li>
+          <li>
+            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
+              >Plataformas</a
+            >
+          </li>
+          <li>
+            <a href="/assets/pages/comunidade/community.html" class="abas"
+              >Comunidade</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav__user">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <a href="/assets/pages/registros/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+        </div>
+
+        <div class="nav__menu">
+          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
+            <i class="ph ph-sun-dim"></i>
+          </button>
+
+          <button
+            class="nav__menu-button"
+            aria-label="Abrir menu de navegação"
+            onclick="openMenu()"
+          >
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav__mobile">
+        <a href="/assets/pages/registros/register.html">
+          <i class="bi bi-person-badge"></i>
+        </a>
+
+        <ul>
+          <li>
+            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+              Notícias
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/plataformas/plataformas.html"
+              class="abas-mobile"
+            >
+              Plataformas
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/assets/pages/comunidade/community.html"
+              class="abas-mobile"
+            >
+              Comunidade
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main id="noticias">
-        <section class="news">
-            <div class="search__news">
-                <h1>
-                    Notícias
-                </h1>
-                <form action="" class="section-search">
-                    <input type="search" placeholder="O que procura?" class="bar-search">
-                    <button class="btn-search">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
-            </div>
+    <main id="news">
+      <section class="search-container">
+        <h1>Notícias</h1>
 
-            <div class="container">
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Mario.webp"
-                            alt="Mario-Kart-World" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
+        <form action="" class="search__bar">
+          <input
+            type="search"
+            name="search"
+            placeholder="O que procura?"
+            class="search"
+          />
+          <button class="search-btn">
+            <i class="ph ph-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
 
-                        <h4>
-                            Mario Kart World foi originalmente planejado para o 1˚ Switch
-                        </h4>
+      <section class="container-cards">
+        <article class="card-news">
+          <div class="img-card">
+            <img src="/src/imgs/noticias/Mario.webp" alt="Mario Kart World" />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Kenta Sato, diretor de programação do jogo, revelou que o principal lançamento do novo Switch era originalmente planejado para o Switch 1.
-                        </p>
+            <h4>Mario Kart foi originalmente planejado para o 1˚ Switch.</h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-03.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Kenta Sato, diretor de programação do jogo, revelou que o
+              principal lançamento do novo Switch era originalmente planejado
+              para o Switch 1.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Fortnite.webp"
-                            alt="Fortnite na Apple" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-03.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h4>
-                            Fortnite retorna para a App Store americana após 4 anos.
-                        </h4>
+        <article class="card-news">
+          <div class="img-card">
+            <img
+              src="/src/imgs/noticias/Fortnite.webp"
+              alt="Fortnite na AppleStore"
+            />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Após 4 anos, Fortnite retorna a AppStore americana nesta terça-feira (20) após uma longa batalha judicial entre Epic Games e Apple.
-                        </p>
+            <h4>Fortnite retorna para a App Store americana após 4 anos.</h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-04.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Após 4 anos, Fortnite retorna a AppStore americana nesta
+              terça-feira (20) após uma longa batalha judicial entre Epic Games
+              e Apple.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Rayman.webp"
-                            alt="Persona-Rayman" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">21/05/2025</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-04.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h4>
-                            Ubisoft em busca de desenvolvedores para um novo Rayman?!
-                        </h4>
+        <article class="card-news">
+          <div class="img-card">
+            <img src="/src/imgs/noticias/Rayman.webp" alt="Rayman" />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Usuários da plataforma Reddit descobrem ofertas de emprego para a "produção de um prestigioso título AAA para a franquia Rayman" na Ubisoft Milan após postagem realizadas pela empresa.
-                        </p>
+            <h4>Ubisoft em busca de desenvolvedores para um novo Rayman?!</h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-05.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Usuários da plataforma Reddit descobrem ofertas de emprego para a
+              "produção de um prestigioso título AAA para a franquia Rayman" na
+              Ubisoft Milan após postagem realizadas pela empresa.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/ClashofNetflix.webp"
-                            alt="Clash of Clans & Netflix" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">20/05/2025</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-05.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h4>
-                            Clash of Clans recebe homenagem da Netflix com o anuncio de uma nova série.
-                        </h4>
+        <article class="card-news">
+          <div class="img-card">
+            <img
+              src="/src/imgs/noticias/ClashofNetflix.webp"
+              alt="Clash of Clans na Netflix"
+            />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 20/05/2025 </span>
 
-                        <p>
-                            Um dos grandes sucessos para dispositivos mobile, o jogo de estratégia <strong>Clash of Clans</strong> irá ganhar uma série original da Netflix.
-                        </p>
+            <h4>
+              Clash of Clans recebe homenagem da Netflix com o anuncio de uma
+              nova série.
+            </h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-02.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Um dos grandes sucessos para dispositivos mobile, o jogo de
+              estratégia Clash of Clans irá ganhar uma série original da
+              Netflix.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/Switch2.webp"
-                            alt="Switch-2" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">20/02/2025</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-02.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h4>
-                            Possivel novo acordo entre Nintendo e Samsung para o produção do Swicth 2 OLED.
-                        </h4>
+        <article class="card-news">
+          <div class="img-card">
+            <img
+              src="/src/imgs/noticias/Switch2.webp"
+              alt="Switch2 com telas OLED"
+            />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 20/02/2025 </span>
 
-                        <p>
-                           Nintendo e Samsung unindo forças para trabalhar no Switch 2 com suporte a modelos de telas OLED e na produção de processadores pro console.
-                        </p>
+            <h4>
+              Possivel novo acordo entre Nintendo e Samsung para o produção do
+              Swicth 2 OLED.
+            </h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-01.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Após 4 anos, Fortnite retorna a AppStore americana nesta
+              terça-feira (20) após uma longa batalha judicial entre Epic Games
+              e Apple.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src="/src/images/noticias/FreeFire.webp"
-                            alt="Free-Fire-Solara" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">22/05/2025</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-01.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h4>
-                            Em comemoração ao 8°aniverśario, Free Fire apresentará o novo mapa "Solara".
-                        </h4>
+        <article class="card-news">
+          <div class="img-card">
+            <img
+              src="/src/imgs/noticias/FreeFire.webp"
+              alt="Free Fire Solara"
+            />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 22/05/2025 </span>
 
-                        <p>
-                           Após 3 anos sem receber um novo mapa, Free Fire comemora seu 8˚(oitavo) aniversário com o lançamento do mapa Solara.
-                        </p>
+            <h4>
+              Em comemoração ao 8°aniverśario, Free Fire apresentará o novo mapa
+              "Solara".
+            </h4>
 
-                        <a href="../noticias/notícias-conteúdo/noticia-06.html" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Após 3 anos sem receber um novo mapa, Free Fire comemora seu
+              8˚(oitavo) aniversário com o lançamento do mapa Solara.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src=""
-                            alt="" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">00/00/0000</span>
+            <a
+              href="/assets/pages/noticias/notices/noticia-06.html"
+              class="link-card"
+            >
+              Leia mais
+            </a>
+          </div>
+        </article>
 
-                        <h3>
-                            Title
-                        </h3>
+        <article class="card-news">
+          <div class="img-card">
+            <img src="/src/imgs/noticias/Mario.webp" alt="Mario Kart World" />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
-                        </p>
+            <h4>Mario Kart foi originalmente planejado para o 1˚ Switch.</h4>
 
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Kenta Sato, diretor de programação do jogo, revelou que o
+              principal lançamento do novo Switch era originalmente planejado
+              para o Switch 1.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src=""
-                            alt="" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">00/00/0000</span>
+            <a href="" class="link-card"> Leia mais </a>
+          </div>
+        </article>
 
-                        <h3>
-                            Title
-                        </h3>
+        <article class="card-news">
+          <div class="img-card">
+            <img
+              src="/src/imgs/noticias/Fortnite.webp"
+              alt="Fortnite na AppleStore"
+            />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
-                        </p>
+            <h4>Fortnite retorna para a App Store americana após 4 anos.</h4>
 
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
+            <p>
+              Após 4 anos, Fortnite retorna a AppStore americana nesta
+              terça-feira (20) após uma longa batalha judicial entre Epic Games
+              e Apple.
+            </p>
 
-                <article class="card__news">
-                    <div class="card-img">
-                        <img
-                            src=""
-                            alt="" />
-                    </div>
-                    <div class="card-text">
-                        <span class="date">00/00/0000</span>
+            <a href="" class="link-card"> Leia mais </a>
+          </div>
+        </article>
 
-                        <h3>
-                            Title
-                        </h3>
+        <article class="card-news">
+          <div class="img-card">
+            <img src="/src/imgs/noticias/Rayman.webp" alt="Mario Kart World" />
+          </div>
+          <div class="txt-card">
+            <span class="date"> 21/05/2025 </span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores numquam similique, vero consequuntur suscipit laborum quo voluptas architecto pariatur, quaerat eius aperiam molestias sit neque mollitia! Eligendi, aliquam veniam?
-                        </p>
+            <h4>Ubisoft em busca de desenvolvedores para um novo Rayman?!</h4>
 
-                        <a href="" class="card-link">
-                            Leia mais
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
+            <p>
+              Usuários da plataforma Reddit descobrem ofertas de emprego para a
+              "produção de um prestigioso título AAA para a franquia Rayman" na
+              Ubisoft Milan após postagem realizadas pela empresa.
+            </p>
 
+            <a href="" class="link-card"> Leia mais </a>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
-      <section class="header">
-          <h3>GameWired</h3>
-          <img src="/src/images/Logo.svg" alt="Logo-GameWired" />
-      </section>
+      <div class="footer-head">
+        <span>GameWired</span>
+        <img src="/src/imgs/Logo.svg" alt="Logo-GameWired" />
+      </div>
 
-      <span>Projeto facultativo</span>
+      <div class="description">
+        <p>Projeto de Extensão.</p>
+      </div>
 
-      <section class="info">
+      <div class="infos">
         <div class="about">
-          <p>Projeto</p>
+          <p>Sobre:</p>
 
-          <a href="" class="link"> Sobre </a>
-          <a href="" class="link"> Marca </a>
-          <a href="" class="link">Suporte</a>
+          <ul>
+            <li>
+              <a href="">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="">Contato</a>
+            </li>
+
+            <li>
+              <a href="">Suporte</a>
+            </li>
+
+            <li>
+              <a href="">FAQ</a>
+            </li>
+
+            <li>
+              <a href="">Identidade</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="navigation">
-          <p>Navegação</p>
+        <div class="sections">
+          <p>Navegação:</p>
 
-          <a href="/index.html" class="link"> Home </a>
-          <a href="#noticias" class="link"> Notícias </a>
-          <a href="" class="link">
-            Plataformas
-          </a>
-          <a href="/assets/pages/comunidade/community.html" class="link">
-            Comunidade
-          </a>
-          <a href="/assets/pages/login/login.html" class="link">
-            Cadastro
-          </a>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
 
-          <a href="" class="link"> Login </a>
+            <li>
+              <a href="/assets/pages/noticias/news.html"> Notícias </a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/plataformas/plataformas.html"
+                >Plataformas</a
+              >
+            </li>
+
+            <li>
+              <a href="/assets/pages/comunidade/community.html">Comunidade</a>
+            </li>
+
+            <li>
+              <a href="/assets/pages/registros/register.html">Cadastre-se</a>
+            </li>
+          </ul>
         </div>
 
         <div class="social">
-          <p>Social</p>
+          <p>Social:</p>
 
-          <a href="" class="link">
-            <i class="bi bi-instagram"> Instagram</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-github"> GitHub</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-twitter-x"> Twiter X</i>
-          </a>
-          <a href="" class="link">
-            <i class="bi bi-pinterest"> Pinterest</i>
-          </a>
+          <ul>
+            <li>
+              <a href="">
+                <i class="ph ph-instagram-logo"></i>
+                Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-x-logo"></i>
+                Twitter X
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-dev-to-logo"></i>
+                Dev
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="ph ph-github-logo"></i>
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <a href=""
+                ><i class="ph ph-discord-logo"></i>
+                Discord
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <div class="direitos">
+        <p>© 2024 GameWired. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-    <script src="/assets/scripts/themes.js"></script>
-    <script src="/assets/scripts/_navMobile.js"></script>
+    <script src="/assets/scripts/_navBar.js"></script>
+    <script src="/assets/scripts/_temas.js"></script>
   </body>
 </html>
