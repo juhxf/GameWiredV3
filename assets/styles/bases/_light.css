@@ -15,7 +15,17 @@
         .ph-moon-stars, .ph-sun-dim, .bi-person-badge{
             color: var(--bg-Eclipse);
         }
+
+        .nav__menu{
+            .nav__menu-button{
+                .bar{
+                    background-color: var(--bg-Eclipse);
+                }
+            }
+        }
     }
+
+
 
     .card-news, .card-community, .card__dev{
         background-color: var(--bg-Card2);

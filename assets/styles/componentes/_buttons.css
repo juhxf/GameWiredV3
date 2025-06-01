@@ -17,6 +17,16 @@
     color: var(--bg-Font);
 }
 
+.devs{
+    background-color: var(--bg-Button);
+    color: var(--bg-Font);
+    padding: 0.6em 1.5em;
+    border-radius: 8px;
+    margin: 1vh 0;
+    width: 100%;
+    text-align: center;
+}
+
 .btn-back {
     text-align: justify;
     color: var(--bg-Font);

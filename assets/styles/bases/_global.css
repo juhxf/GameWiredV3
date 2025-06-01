@@ -30,10 +30,20 @@ body {
   border-radius: 100%;
   filter: blur(20px);
   /* Removido: filter: blur(200px); - o degradê já faz o trabalho de suavização */
-  top: -40%;
-  right: -15%;
+  top: -30%;
+  right: -10%;
   z-index: -1;
   /* Opcional: Adicionar um leve scale em hover, se for interativo */
   /* transform: scale(1); */
   /* transition: transform 0.5s ease-out; */
+}
+
+
+@media screen and (max-width: 640px) {
+    .eclipse::before{
+      height: 679px;
+      width: 679px;
+      right: -70%;
+      top: -30%;
+    }
 }
