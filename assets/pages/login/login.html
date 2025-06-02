@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="eclipse"></div>
+
+    <section>
+      <div class="container-img">
+        <h1>Bem-vindo ao GameWired!</h1>
+        <img src="img/Online games addiction-cuate.png" alt="" />
+      </div>
+
+      <form action="recebe.html" method="get" id="form" novalidate>
+        <div class="container-login">
+          <h2>Cadastre-se</h2>
+
+          <div class="input-box">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+
+            <span class="error"></span>
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Crie sua senha"
+            />
+
+            <span class="error"></span>
+          </div>
+
+          <div id="action">
+            <button type="reset" class="btn">Limpar</button>
+
+            <button type="submit" class="btn">Entrar</button>
+          </div>
+
+          <p>
+            Não possui uma conta?
+            <a href="/assets/pages/registros/register.html">Cadastre-se</a>
+          </p>
+
+          <div class="message">
+            <p>email: teste@gmail.com</p>
+            <p>senha: Teste123!</p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="login.js"></script>
+  </body>
+</html>
