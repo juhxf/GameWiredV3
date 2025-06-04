@@ -1,3 +1,9 @@
+*:focus-visible {
+  outline: 3em solid #00f7ff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 body {
 
   font-family: 'Outfit', 'SFPro', system-ui;
