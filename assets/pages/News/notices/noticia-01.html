@@ -30,10 +30,11 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
     <title>
-      GameWired | Capcom abrirá novo escritório no Japão e expandirá equipes
+      GameWired | Nintendo pode ter fechado acordo com a Samsung para produção
+      do Switch 2 OLED
     </title>
   </head>
 
@@ -48,39 +49,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -92,20 +93,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -114,7 +115,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -127,23 +128,27 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
           <h2 class="title">
-            Capcom abrirá novo escritório no Japão e expandirá equipes
+            Nintendo pode ter fechado acordo com a Samsung para produção do
+            Switch 2 OLED
           </h2>
 
-          <span class="date"> 26/05/2025 </span>
+          <span class="date"> 20/05/2025 </span>
 
           <div class="head">
-            <p>Empresa irá contratar 100 funcionários por ano.</p>
+            <p>
+              Parceria entre as empresas inclui produções de processador para o
+              Switch 2.
+            </p>
 
             <img
-              src="/src/imgs/noticias/capcom.webp"
-              alt="Capcom"
+              src="/src/imgs/noticias/switch-2-oled.webp"
+              alt="Switch OLED"
               class="img"
               loading="lazy"
             />
@@ -151,40 +156,35 @@
 
           <div class="txt-notice">
             <p>
-              A desenvolvedora de jogos, Capcom, anunciou a construção de um
-              novo escritório em Osaka, no Japão. A previsão para que fique
-              pronto é em 2027 e faz parte de uma expansão da empresa, que vai
-              contratar 100 novos funcionários a cada ano.
+              A Nintendo e a Samsung estão unindo forças para trabalhar no
+              Switch 2. Não apenas na produção do ainda não anunciado Switch 2
+              OLED, mas também na produção dos processadores do console.
             </p>
 
-            <p>
-              As informações foram publicadas no relatório fiscal mais recente
-              da empresa, confirmando também o 12º ano lucrativo consecutivo
-              para a Capcom, impulsionado pelo lançamento do jogo Monster Hunter
-              Wilds, que ainda prevê 54 milhões de cópias vendidas até o fim do
-              próximo ano fiscal.
-            </p>
+            <blockquote>
+              “A Nintendo recorreu à Samsung para ajudar a fabricar os
+              principais chips para o Switch 2, uma iniciativa que pode ajudar a
+              empresa japonesa a aumentar a produção do console de jogos o
+              suficiente para vender 20 milhões de unidades, mais do que o
+              projetado, até março de 2026", relatou a Bloomberg.
+            </blockquote>
 
             <p>
-              O jogo possui até o momento 10 milhões de cópias já
-              comercializadas e ao total, a franquia tem 120 milhões, ficando
-              atrás apenas da grande franquia, Resident Evil, com um total de
-              170 milhões.
-            </p>
-
-            <p>
-              Enquanto muitas outras empresas realizam cortes de funcionários, a
-              Capcom vai na mare contrária e contrata novos funcionários,
-              expandindo seu escritório.
+              A Samsung é, há muito tempo, uma fornecedora importante da
+              Nintendo, fornecendo memória flash NAND e telas OLED para o
+              Switch. Como o Switch original eventualmente recebeu um modelo com
+              tela OLED, oferendo uma qualidade visual muito superior no modo
+              portátil em comparação com os demais modelos, não seria uma
+              surpresa se a Nintendo lançar um Switch 2 OLED em algum momento.
             </p>
 
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.omelete.com.br/games/capcom-abrira-novo-escritorio-no-japao-e-expandira-equipes"
+                href="https://www.terra.com.br/gameon/plataformas-e-consoles/nintendo-pode-ter-fechado-acordo-com-a-samsung-para-producao-do-switch-2-oled,d252384e2ad61bb3e60d8fe72efaef03433vox0n.html"
                 target="_blank"
-                >Omelete - Capcom abrirá novo escritório no Japão e expandirá
-                equipes
+                >Terra - Nintendo pode ter fechado acordo com a Samsung para
+                produção do Switch 2 OLED.
               </a>
             </p>
           </div>

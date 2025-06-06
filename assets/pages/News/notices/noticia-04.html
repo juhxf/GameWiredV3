@@ -30,11 +30,10 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
     <title>
-      GameWired | Nintendo pode ter fechado acordo com a Samsung para produção
-      do Switch 2 OLED
+      GameWired | Fortnite retorna para a App Store americana após 4 anos
     </title>
   </head>
 
@@ -49,39 +48,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -93,20 +92,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -115,7 +114,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -128,27 +127,26 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
           <h2 class="title">
-            Nintendo pode ter fechado acordo com a Samsung para produção do
-            Switch 2 OLED
+            Fortnite retorna para a App Store americana após 4 anos
           </h2>
 
-          <span class="date"> 20/05/2025 </span>
+          <span class="date"> 21/05/2025 </span>
 
           <div class="head">
             <p>
-              Parceria entre as empresas inclui produções de processador para o
-              Switch 2.
+              O jogo estava fora do ar na plataforma desde o começo da batalha
+              judicial com a Apple.
             </p>
 
             <img
-              src="/src/imgs/noticias/switch-2-oled.webp"
-              alt="Switch OLED"
+              src="/src/imgs/noticias/fortnite-appstore.webp"
+              alt="Fortnite na App Store"
               class="img"
               loading="lazy"
             />
@@ -156,35 +154,38 @@
 
           <div class="txt-notice">
             <p>
-              A Nintendo e a Samsung estão unindo forças para trabalhar no
-              Switch 2. Não apenas na produção do ainda não anunciado Switch 2
-              OLED, mas também na produção dos processadores do console.
+              Fortnite retornou para a App Store americana nessa terça-feira
+              (20) após uma longa batalha judicial entre a Epic Games e a Apple,
+              vencida pela Epic Games. O retorno marcou uma ausência de 4 anos
+              na loja dos aparelhos iOS.
             </p>
-
-            <blockquote>
-              “A Nintendo recorreu à Samsung para ajudar a fabricar os
-              principais chips para o Switch 2, uma iniciativa que pode ajudar a
-              empresa japonesa a aumentar a produção do console de jogos o
-              suficiente para vender 20 milhões de unidades, mais do que o
-              projetado, até março de 2026", relatou a Bloomberg.
-            </blockquote>
 
             <p>
-              A Samsung é, há muito tempo, uma fornecedora importante da
-              Nintendo, fornecendo memória flash NAND e telas OLED para o
-              Switch. Como o Switch original eventualmente recebeu um modelo com
-              tela OLED, oferendo uma qualidade visual muito superior no modo
-              portátil em comparação com os demais modelos, não seria uma
-              surpresa se a Nintendo lançar um Switch 2 OLED em algum momento.
+              O aplicativo não estava disponível na loja americana desde agosto
+              de 2020, após a Apple retirar ele por um implementar um sistema de
+              pagamento no próprio aplicativo, violando as regras da empresa.
+              Após 4 anos, entre muitas batalhas judiciais, a Epic conseguiu a
+              vitória final para poder voltar a App Store.
             </p>
 
+            <p>
+              Fortnite foi lançado pela primeira vez em 2017, originalmente como
+              um jogo de Battle Royale, com 100 usuários disputando o primeiro
+              lugar em um gigantesco mapa.
+            </p>
+
+            <p>
+              O jogo está disponível de graça no PS4, PS5, Xbox One, Xbox Series
+              S, Xbox Series X, Nintendo Switch e PC.
+            </p>
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.terra.com.br/gameon/plataformas-e-consoles/nintendo-pode-ter-fechado-acordo-com-a-samsung-para-producao-do-switch-2-oled,d252384e2ad61bb3e60d8fe72efaef03433vox0n.html"
+                href="https://www.omelete.com.br/games/fortnite-retorna-para-a-app-store-americana-apos-4-anos"
                 target="_blank"
-                >Terra - Nintendo pode ter fechado acordo com a Samsung para
-                produção do Switch 2 OLED.
+              >
+                Omelete - Fortnite retorna para a App Store americana após 4
+                anos.
               </a>
             </p>
           </div>

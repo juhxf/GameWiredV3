@@ -30,11 +30,10 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
     <title>
-      GameWired | Ubisoft está em busca de profissionais para trabalhar em novo
-      Rayman
+      GameWired | Capcom abrirá novo escritório no Japão e expandirá equipes
     </title>
   </head>
 
@@ -49,39 +48,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -93,20 +92,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -115,7 +114,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -128,25 +127,23 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
           <h2 class="title">
-            Ubisoft está em busca de profissionais para trabalhar em novo Rayman
+            Capcom abrirá novo escritório no Japão e expandirá equipes
           </h2>
-          <span class="date"> 21/05/2025 </span>
+
+          <span class="date"> 26/05/2025 </span>
 
           <div class="head">
-            <p>
-              O estúdio Ubisoft Milan, responsável por Mario + Rabbids, está
-              aumentando sua equipe para fazer um jogo AAA da franquia Rayman.
-            </p>
+            <p>Empresa irá contratar 100 funcionários por ano.</p>
 
             <img
-              src="/src/imgs/noticias/rayman-legends.webp"
-              alt="Rayman"
+              src="/src/imgs/noticias/capcom.webp"
+              alt="Capcom"
               class="img"
               loading="lazy"
             />
@@ -154,35 +151,40 @@
 
           <div class="txt-notice">
             <p>
-              Usuários do Reddit descobriram que a Ubisoft Milan (que fez os
-              jogos Mario + Rabbids) postou no ar ofertas de emprego para
-              trabalhar na "produção de um prestigioso título AAA para a
-              franquia Rayman".
+              A desenvolvedora de jogos, Capcom, anunciou a construção de um
+              novo escritório em Osaka, no Japão. A previsão para que fique
+              pronto é em 2027 e faz parte de uma expansão da empresa, que vai
+              contratar 100 novos funcionários a cada ano.
             </p>
 
             <p>
-              A Ubisoft fez menções no ano passado sobre trazer Rayman de volta.
-              Na ocasião, o criador de Rayman, Michel Ancel, que teve sua saída
-              da Ubisoft em 2020, estava prestando consultoria ao projeto.
+              As informações foram publicadas no relatório fiscal mais recente
+              da empresa, confirmando também o 12º ano lucrativo consecutivo
+              para a Capcom, impulsionado pelo lançamento do jogo Monster Hunter
+              Wilds, que ainda prevê 54 milhões de cópias vendidas até o fim do
+              próximo ano fiscal.
             </p>
-            <blockquote>
-              “Temos o prazer de confirmar que a Ubisoft Montpellier e a Ubisoft
-              Milan iniciaram recentemente uma fase de exploração da franquia
-              Rayman”, disse um porta-voz da Ubisoft (via VGC). “O projeto ainda
-              está em estágio inicial e compartilharemos mais detalhes
-              posteriormente.”
-            </blockquote>
 
-            <p>Rayman Legends foi o último jogo da série, lançado em 2013.</p>
+            <p>
+              O jogo possui até o momento 10 milhões de cópias já
+              comercializadas e ao total, a franquia tem 120 milhões, ficando
+              atrás apenas da grande franquia, Resident Evil, com um total de
+              170 milhões.
+            </p>
+
+            <p>
+              Enquanto muitas outras empresas realizam cortes de funcionários, a
+              Capcom vai na mare contrária e contrata novos funcionários,
+              expandindo seu escritório.
+            </p>
 
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.terra.com.br/gameon/plataformas-e-consoles/ubisoft-esta-em-busca-de-profissionais-para-trabalhar-em-novo-rayman,87a5314fc2ff842fbd5220fa99ccf595mye0x2ej.html"
+                href="https://www.omelete.com.br/games/capcom-abrira-novo-escritorio-no-japao-e-expandira-equipes"
                 target="_blank"
-              >
-                Terra - Ubsoft esta em busca de profissionais para trabalhar em
-                novo Rayman
+                >Omelete - Capcom abrirá novo escritório no Japão e expandirá
+                equipes
               </a>
             </p>
           </div>

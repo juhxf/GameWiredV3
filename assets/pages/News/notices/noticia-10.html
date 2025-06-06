@@ -30,10 +30,11 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
     <title>
-      GameWired | Death Stranding vai ganhar anime, diz Hideo Kojima
+      GameWired | Fortnite Festival | Evento com Sabrina Carpenter começa no fim
+      de maio
     </title>
   </head>
 
@@ -48,39 +49,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -92,20 +93,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -114,7 +115,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -127,23 +128,27 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
           <h2 class="title">
-            Death Stranding vai ganhar anime, diz Hideo Kojima
+            Fortnite Festival | Evento com Sabrina Carpenter começa no fim de
+            maio
           </h2>
 
-          <span class="date"> 28/05/2025 </span>
+          <span class="date"> 27/05/2025 </span>
 
           <div class="head">
-            <p>Projeto já está em desenvolvimento, segundo criador da obra.</p>
+            <p>
+              Dance com Sabrina testará ritmo dos jogadores ao som de Espresso e
+              Feather.
+            </p>
 
             <img
-              src="/src/imgs/noticias/death-stranding.webp"
-              alt="Death Stranding"
+              src="/src/imgs/noticias/fortnite-sabrina.webp"
+              alt="Sabrina Carpenter no Fortnite"
               class="img"
               loading="lazy"
             />
@@ -151,42 +156,34 @@
 
           <div class="txt-notice">
             <p>
-              O japonês Hideo Kojima afirmou que a franquia Death Stranding será
-              o próximo sucesso dos games a ser adaptado para animação.
+              Sabrina Carpenter chega ao Fortnite Festival a partir de 30 de
+              maio, assumindo o comando do Palco do Improviso no evento Dance
+              com Sabrina, que vai testar o ritmo dos jogadores ao som dos hits
+              da cantora.
             </p>
-
-            <blockquote>
-              “Atualmente, estou trabalhando com a A24 em uma adaptação
-              cinematográfica live-action de Death Stranding”, disse Kojima (via
-              Videogames Chronicle). “Quando se trata de adaptar jogos para
-              mídia visual, há obras como The Last of Us, que se mantém fiel à
-              história original, e filmes como The Super Mario Bros Movie, que
-              prestam mais serviços aos fãs do jogo”, continuou.
-            </blockquote>
-
-            <blockquote>
-              Kojima, então, falou sobre a ideia de fazer um anime: “Embora
-              essas obras tenham seus próprios méritos, como cinéfilo, quero
-              explorar o potencial expressivo do cinema. Meu objetivo é criar um
-              Death Stranding que só possa ser realizado por meio de filmes, um
-              que possa ganhar prêmios em festivais como o Festival de Cinema de
-              Cannes ou o Festival de Cinema de Veneza. Aliás, também estamos
-              trabalhando em uma adaptação para anime”.
-            </blockquote>
 
             <p>
-              Death Stranding 2: On the Beach seguirá acompanhando a história de
-              Sam Bridges, protagonista do primeiro game. Exclusivo de
-              PlayStation 5, o jogo chega em 24 de junho — mas deve receber uma
-              versão de PC no futuro.
+              Músicas como Espresso e Feather, que estouraram nos últimos anos,
+              vão estar disponíveis. Ao final de cada dança, quem tiver a maior
+              pontuação receberá uma função especial na próxima apresentação,
+              como Profissional de Efeitos Visuais ou Líder de Dança. Ao final,
+              o vencedor vai ganhar uma selfie ao lado da cantora.
             </p>
+
+            <p>
+              No dia 29, antes do evento começar, o pacote “Bad Chem” chega à
+              loja com a música e sua coreografia.
+            </p>
+
+            <p>Dance com Sabrina ficará disponível até o dia 17 de junho.</p>
 
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.omelete.com.br/games/death-stranding-vai-ganhar-anime-diz-hideo-kojima"
+                href="https://www.omelete.com.br/games/sabrina-carpenter-fortnite-festival"
                 target="_blank"
-                >Omelete - Death Stranding vai ganhar anime, diz Hideo Kojima
+                >Omelete - Fortnite Festival | Evento com Sabrina Carpenter
+                começa no fim de maio
               </a>
             </p>
           </div>

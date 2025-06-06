@@ -30,10 +30,11 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
     <title>
-      GameWired | Órgão trabalhista critica Sony por fechar estúdio de Concord
+      GameWired | Franquia Pokémon ultrapassa a marca de 489 milhões de jogos
+      vendidos
     </title>
   </head>
 
@@ -48,39 +49,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -92,20 +93,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -114,7 +115,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -127,25 +128,26 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
           <h2 class="title">
-            Órgão trabalhista critica Sony por fechar estúdio de Concord
+            Franquia Pokémon ultrapassa a marca de 489 milhões de jogos vendidos
           </h2>
 
-          <span class="date"> 31/05/2025 </span>
+          <span class="date"> 24/05/2025 </span>
 
           <div class="head">
             <p>
-              Decisão foi tomada para aumentar monopólio, segundo a organização.
+              Além disso, mais de 75 bilhões de cartas colecionáveis já foram
+              distribuídas.
             </p>
 
             <img
-              src="/src/imgs/noticias/concord.webp"
-              alt="Concord"
+              src="/src/imgs/noticias/pokemon-vendas.webp"
+              alt="Pokémon bate recorde de vendas"
               class="img"
               loading="lazy"
             />
@@ -153,54 +155,44 @@
 
           <div class="txt-notice">
             <p>
-              O Communication Workers of America (CWA), sindicato
-              norte-americano de trabalhadores de comunicação e mídia, emitiu um
-              comunicado criticando a Sony pela decisão de fechar o estúdio
-              Firewalk, responsável por Concord.
+              No universo do entretenimento, Pokémon continua sendo, sem
+              dúvidas, uma das franquias mais populares e bem-sucedidas de todos
+              os tempos. Seja na venda de jogos, cartas colecionáveis ou
+              brinquedos, a marca mantém uma presença constante entre os líderes
+              de mercado.
             </p>
 
             <p>
-              De acordo com o CWA, a decisão foi tomada para aumentar o
-              monopólio da Sony e prejudica diretamente trabalhadores do mercado
-              de videogames, que ficaram sem seus empregos - e informam que
-              querem tomar medidas cabíveis.
-            </p>
-
-            <blockquote>
-              "A CWA planeja levantar os impactos anticompetitivos do crescente
-              poder de monopólio e monopsônio da Sony com os reguladores
-              antitruste, formuladores de políticas e partes interessadas
-              apropriados", diz o comunicado.
-            </blockquote>
-
-            <blockquote>
-              "A decisão da Sony de dissolver estúdios fora de seu conteúdo
-              exclusivo do PlayStation, em vez de fazer jogos que precisam
-              competir no mercado altamente diversificado e competitivo de jogos
-              para dispositivos móveis, deve ser um sinal de alerta sobre os
-              interesses da Sony em promover sua posição de monopólio na
-              indústria de videogames", continuou a CWA.
-            </blockquote>
-
-            <p>
-              O Firewalk Studios foi adquirido pela Sony em 2023, com o objetivo
-              de lançar um game multiplayer de alto orçamento, que seria
-              Concord, no futuro.
+              Recentemente, a The Pokémon Company atualizou os dados oficiais de
+              desempenho da franquia, revelando números impressionantes. Até
+              março de 2025, já foram vendidas 489 milhões de cópias de jogos
+              desde o lançamento da série, em 1996.
             </p>
 
             <p>
-              A produtora foi fundada em 2018 e tinha nomes que trabalharam na
-              Bungie. O Firewalk contava com cerca de 150 funcionários, que
-              agora têm o destino incerto.
+              Outros marcos igualmente expressivos incluem a produção de mais de
+              75 bilhões de cartas colecionáveis, traduzidas para 16 idiomas e
+              distribuídas em 90 regiões ao redor do mundo. O anime, por sua
+              vez, já foi exibido em mais de 190 países.
+            </p>
+
+            <p>
+              Vale lembrar que, há alguns meses, Pokémon também foi apontada
+              como a franquia de brinquedos mais vendida nos Estados Unidos,
+              sendo a única a ultrapassar a marca de US$ 1 bilhão em vendas no
+              país. Para fins de comparação, a Rockstar Games anunciou
+              recentemente que sua popular franquia GTA alcançou a marca de 450
+              milhões de cópias vendidas. Isso coloca Pokémon com uma vantagem
+              de 39 milhões de unidades à frente.
             </p>
 
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.theenemy.com.br/playstation/orgao-trabalhista-critica-sony-por-fechar-estudio-de-concord"
+                href="https://www.gamevicio.com/noticias/2025/05/pokemon-489-milhoes-venda/"
                 target="_blank"
-                >The Enemy - Órgão trabalhista critica Sony por fechar estúdio
-                de Concord
+                >GameVicio - Franquia Pokémon ultrapassa a marca de 489 milhões
+                de jogos vendidos
               </a>
             </p>
           </div>

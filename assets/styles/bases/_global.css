@@ -1,12 +1,11 @@
 *:focus-visible {
-  outline: 3em solid #00f7ff;
+  outline: 1px solid var(--bg-Button);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 body {
-
-  font-family: 'Outfit', 'SFPro', system-ui;
+  font-family: "Outfit", "SFPro", system-ui;
   background: var(--bg-Background);
   color: var(--bg-Font);
   transition: all 3s ease;
@@ -22,18 +21,15 @@ body {
   width: 800px;
   /* Corrigido: Usando radial-gradient para um efeito mais suave */
   /* Ele começa com a cor da eclipse no centro, e vai para transparente */
-  background: radial-gradient(circle at center,
-      var(--bg-Eclipse) 0%,
-      /* Cor sólida no centro */
-      rgba(var(--bg-Eclipse-rgb), 0.8) 20%,
-      /* Levemente transparente */
-      rgba(var(--bg-Eclipse-rgb), 0.5) 40%,
-      /* Mais transparente */
-      rgba(var(--bg-Eclipse-rgb), 0.2) 60%,
-      /* Bem transparente */
-      transparent 80%
+  background: radial-gradient(
+    circle at center,
+    var(--bg-Eclipse) 0%,
+    /* Cor sólida no centro */ rgba(var(--bg-Eclipse-rgb), 0.8) 20%,
+    /* Levemente transparente */ rgba(var(--bg-Eclipse-rgb), 0.5) 40%,
+    /* Mais transparente */ rgba(var(--bg-Eclipse-rgb), 0.2) 60%,
+    /* Bem transparente */ transparent 80%
       /* Totalmente transparente, criando a borda suave */
-    );
+  );
   border-radius: 100%;
   filter: blur(20px);
   /* Removido: filter: blur(200px); - o degradê já faz o trabalho de suavização */
@@ -45,12 +41,11 @@ body {
   /* transition: transform 0.5s ease-out; */
 }
 
-
 @media screen and (max-width: 640px) {
-    .eclipse::before{
-      height: 679px;
-      width: 679px;
-      right: -70%;
-      top: -30%;
-    }
+  .eclipse::before {
+    height: 679px;
+    width: 679px;
+    right: -70%;
+    top: -30%;
+  }
 }

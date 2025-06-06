@@ -30,12 +30,9 @@
 
     <link rel="stylesheet" href="/assets/styles/main.css" />
 
-    <link rel="stylesheet" href="/assets/pages/noticias/notices/noticias.css" />
+    <link rel="stylesheet" href="./noticias.css" />
 
-    <title>
-      GameWired | Franquia Pokémon ultrapassa a marca de 489 milhões de jogos
-      vendidos
-    </title>
+    <title>GameWired | Hideo Kojima é confirmado na BGS 2025</title>
   </head>
 
   <body>
@@ -49,39 +46,39 @@
           </a>
         </div>
 
-        <ul class="nav__center">
-          <li>
-            <a href="/assets/pages/noticias/news.html" class="abas">Notícias</a>
-          </li>
-          <li>
-            <a href="/assets/pages/plataformas/plataformas.html" class="abas"
-              >Plataformas</a
-            >
-          </li>
-          <li>
-            <a href="/assets/pages/comunidade/community.html" class="abas"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-
-        <div class="nav__user">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
-          </button>
-
-          <a href="/assets/pages/registros/register.html">
-            <i class="bi bi-person-badge"></i>
-          </a>
+        <div class="nav__center">
+          <ul>
+            <li>
+              <a href="/assets/pages/News/news.html" class="abas"> Notícias </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Plataforms/plataforms.html" class="abas">
+                Plataformas
+              </a>
+            </li>
+            <li>
+              <a href="/assets/pages/Community/community.html" class="abas">
+                Comunidade
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav__menu">
-          <button class="theme" aria-label="Trocar tema" onclick="toggle()">
-            <i class="ph ph-sun-dim"></i>
+        <div class="nav__user">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            <i class="ph ph-moon-stars"></i>
           </button>
 
+          <a href="/assets/pages/SingUp/Register/register.html">
+            <i class="bi bi-person-badge"></i>
+          </a>
+
           <button
-            class="nav__menu-button"
+            class="nav-button"
             aria-label="Abrir menu de navegação"
             onclick="openMenu()"
           >
@@ -93,20 +90,20 @@
       </nav>
 
       <div class="nav__mobile">
-        <a href="/assets/pages/registros/register.html">
+        <a href="/assets/pages/SingUp/Register/register.html">
           <i class="bi bi-person-badge"></i>
         </a>
 
         <ul>
           <li>
-            <a href="/assets/pages/noticias/news.html" class="abas-mobile">
+            <a href="/assets/pages/News/news.html" class="abas-mobile">
               Notícias
             </a>
           </li>
 
           <li>
             <a
-              href="/assets/pages/plataformas/plataformas.html"
+              href="/assets/pages/Plataforms/plataforms.html"
               class="abas-mobile"
             >
               Plataformas
@@ -115,7 +112,7 @@
 
           <li>
             <a
-              href="/assets/pages/comunidade/community.html"
+              href="/assets/pages/Community/community.html"
               class="abas-mobile"
             >
               Comunidade
@@ -128,26 +125,21 @@
     <main id="news">
       <section class="container">
         <article class="notice">
-          <a href="/assets/pages/noticias/news.html" class="btn-back">
+          <a href="/assets/pages/News/news.html" class="btn-back">
             <i class="ph ph-arrow-left"></i>
             Voltar
           </a>
 
-          <h2 class="title">
-            Franquia Pokémon ultrapassa a marca de 489 milhões de jogos vendidos
-          </h2>
+          <h2 class="title">Hideo Kojima é confirmado na BGS 2025</h2>
 
-          <span class="date"> 24/05/2025 </span>
+          <span class="date"> 29/05/2025 </span>
 
           <div class="head">
-            <p>
-              Além disso, mais de 75 bilhões de cartas colecionáveis já foram
-              distribuídas.
-            </p>
+            <p>Diretor participará de atrações em dois dias de evento.</p>
 
             <img
-              src="/src/imgs/noticias/pokemon-vendas.webp"
-              alt="Pokémon bate recorde de vendas"
+              src="/src/imgs/noticias/hideo-kojima-bgs.webp"
+              alt="Hideo Kojima na BGS"
               class="img"
               loading="lazy"
             />
@@ -155,44 +147,36 @@
 
           <div class="txt-notice">
             <p>
-              No universo do entretenimento, Pokémon continua sendo, sem
-              dúvidas, uma das franquias mais populares e bem-sucedidas de todos
-              os tempos. Seja na venda de jogos, cartas colecionáveis ou
-              brinquedos, a marca mantém uma presença constante entre os líderes
-              de mercado.
+              Hideo Kojima está confirmado na Brasil Game Show (BGS) 2025. O
+              diretor virá ao Brasil para participar do evento, com presença
+              garantida nos dias 11 e 12 de outubro. O anúncio foi feito no X
+              (antigo Twitter) oficial da BGS.
             </p>
 
             <p>
-              Recentemente, a The Pokémon Company atualizou os dados oficiais de
-              desempenho da franquia, revelando números impressionantes. Até
-              março de 2025, já foram vendidas 489 milhões de cópias de jogos
-              desde o lançamento da série, em 1996.
+              Kojima vem ao Brasil como parte da grande turnê mundial de
+              divulgação de seu novo jogo, Death Stranding 2: On the Beach. O
+              jogo será lançado em junho, dia 26, e promoverá uma série de
+              eventos ao redor do mundo.
             </p>
 
             <p>
-              Outros marcos igualmente expressivos incluem a produção de mais de
-              75 bilhões de cartas colecionáveis, traduzidas para 16 idiomas e
-              distribuídas em 90 regiões ao redor do mundo. O anime, por sua
-              vez, já foi exibido em mais de 190 países.
+              A primeira vez que o diretor veio ao Brasil foi em 2017, na
+              própria BGS, então não é a primeira vez que vem ao Brasil.
             </p>
 
             <p>
-              Vale lembrar que, há alguns meses, Pokémon também foi apontada
-              como a franquia de brinquedos mais vendida nos Estados Unidos,
-              sendo a única a ultrapassar a marca de US$ 1 bilhão em vendas no
-              país. Para fins de comparação, a Rockstar Games anunciou
-              recentemente que sua popular franquia GTA alcançou a marca de 450
-              milhões de cópias vendidas. Isso coloca Pokémon com uma vantagem
-              de 39 milhões de unidades à frente.
+              A Brasil Game Show 2025 acontece entre os dias 9 e 12 de outubro,
+              em São Paulo. Os ingressos já estão à venda e têm preços a partir
+              de R$ 129,00.
             </p>
 
             <p>
               Acesse a notícia completa em:
               <a
-                href="https://www.gamevicio.com/noticias/2025/05/pokemon-489-milhoes-venda/"
+                href="https://www.omelete.com.br/games/kojima-confirmado-bgs-2025"
                 target="_blank"
-                >GameVicio - Franquia Pokémon ultrapassa a marca de 489 milhões
-                de jogos vendidos
+                >Omelete - Hideo Kojima é confirmado na BGS 2025
               </a>
             </p>
           </div>
