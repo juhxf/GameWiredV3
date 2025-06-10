@@ -31,7 +31,7 @@ body {
       /* Totalmente transparente, criando a borda suave */
   );
   border-radius: 100%;
-  filter: blur(20px);
+  filter: blur(64px);
   /* Removido: filter: blur(200px); - o degradê já faz o trabalho de suavização */
   top: -30%;
   right: -10%;
