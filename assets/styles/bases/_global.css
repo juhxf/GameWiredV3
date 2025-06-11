@@ -11,6 +11,7 @@ body {
   transition: all 3s ease;
   position: relative;
   overflow-x: hidden;
+
   /* Se outros elementos precisarem de z-index positivo */
 }
 
