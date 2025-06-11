@@ -8,7 +8,7 @@ body {
   font-family: "Outfit", "SFPro", system-ui;
   background: var(--bg-Background);
   color: var(--bg-Font);
-  transition: all 3s ease;
+  transition: all 2s ease;
   position: relative;
   overflow-x: hidden;
 
