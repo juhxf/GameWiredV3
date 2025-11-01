@@ -3,12 +3,12 @@
 /*Bases*/
 @import "/app/views/assets/styles/bases/_reset.css";
 @import "/app/views/assets/styles/bases/_tipografia.css";
-@import "/assets/styles/bases/_light.css";
-@import "/assets/styles/bases/_global.css";
+@import "/app/views/assets/styles/bases/_light.css";
+@import "/app/views/assets/styles/bases/_global.css";
 
 /*Componentes*/
 @import "/app/views/assets/styles/componentes/_cards.css";
-@import "/assets/styles/componentes/_buttons.css";
+@import "/app/views/assets/styles/componentes/_buttons.css";
 
 /*Layout*/
 @import "/app/views/assets/styles/layouts/_navBar.css";
